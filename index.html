@@ -1,10 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Nice Tours and Events</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="index,follow"/>
+  <title>Nice Tours and Events – Luxury tours & memorable events</title>
+
+  <!-- Canonical & SEO -->
+  <link rel="canonical" href="./index.html">
+  <meta name="description" content="Luxury tours and memorable events in Europe. Tailor-made itineraries, curated tastings, castles and storybook towns.">
+
+  <!-- OG/Twitter -->
+  <meta property="og:title" content="Nice Tours and Events – Luxury tours & memorable events">
+  <meta property="og:description" content="Tailor-made tours and events across Europe: castles & gardens, half-timbered towns, Romantic Rhine and wine valleys.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./index.html">
+  <meta property="og:image" content="capa.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nice Tours and Events – Luxury tours & memorable events">
+  <meta name="twitter:description" content="Tailor-made tours and events across Europe.">
+  <meta name="twitter:image" content="capa.jpg">
+
+  <!-- Performance p/ YouTube -->
+  <link rel="preconnect" href="https://www.youtube-nocookie.com">
+  <link rel="preconnect" href="https://i.ytimg.com">
+  <link rel="preconnect" href="https://www.google.com">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --forest:#0F3C2E; }
+
+    /* Marca d’água discreta no hero */
+    .wm{position:relative;display:block;}
+    .wm::after{
+      content:"© Nice Tours and Events";
+      position:absolute; right:14px; bottom:12px;
+      color:rgba(255,255,255,.92);
+      font-weight:700;
+      font-size:clamp(11px,1.2vw,14px);
+      letter-spacing:.02em;
+      text-shadow:0 1px 3px rgba(0,0,0,.5);
+      pointer-events:none;
+    }
+    .imgGuard img{ -webkit-user-drag:none; user-select:none; -webkit-touch-callout:none; }
+
+    /* Ícones sociais */
+    .socbtn{
+      width:2.75rem; height:2.75rem;
+      display:inline-flex; align-items:center; justify-content:center;
+      border-radius:0.9rem;
+      border:1px solid rgba(255,255,255,.35);
+      background:rgba(255,255,255,.06);
+      transition:all .2s ease;
+      backdrop-filter:saturate(140%) blur(2px);
+    }
+    .socbtn:hover{ background:rgba(255,255,255,.14); border-color:rgba(255,255,255,.55); }
+    .socbtn svg{ width:1.35rem; height:1.35rem; color:white; }
+
+    /* Lite-YouTube */
+    .yt-card{ position:relative; width:100%; aspect-ratio:16/9; overflow:hidden; border-radius:0.75rem; cursor:pointer; }
+    .yt-thumb{ width:100%; height:100%; object-fit:cover; display:block; filter:saturate(1.05) contrast(1.02); }
+    .yt-overlay{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:linear-gradient(0deg, rgba(0,0,0,.20), rgba(0,0,0,.10)); transition:background .2s ease; }
+    .yt-card:hover .yt-overlay{ background:linear-gradient(0deg, rgba(0,0,0,.28), rgba(0,0,0,.12)); }
+    .yt-play{ width:68px; height:48px; border-radius:14px; background:rgba(255,255,255,.9); box-shadow:0 6px 20px rgba(0,0,0,.25); display:grid; place-items:center; }
+    .yt-triangle{ width:0; height:0; border-left:18px solid #e11d48; border-top:10px solid transparent; border-bottom:10px solid transparent; margin-left:4px; }
+    .yt-iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+    .yt-open { position:absolute; right:.5rem; bottom:.5rem; background:rgba(255,255,255,.9); border-radius:.6rem; padding:.35rem .55rem; font-size:.8rem; font-weight:600; color:#111; border:1px solid rgba(0,0,0,.09); }
+  </style>
 </head>
-<body>
-  <h1>Site coming soon...</h1>
+<body class="bg-white text-gray-800 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-[color:var(--forest)] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap gap-3 items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo_transparent.png" alt="Nice Tours and Events logo" class="h-24 w-auto" width="240" height="96">
+        <span class="sr-only">Nice Tours and Events</span>
+      </a>
+
+      <nav class="flex flex-wrap items-center gap-4" aria-label="Primary">
+        <a href="index.html" class="hover:underline" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="hover:underline" data-i18n="nav.about">About</a>
+        <a href="tours.html" class="hover:underline" data-i18n="nav.tours">Tours</a>
+        <a href="events.html" class="hover:underline" data-i18n="nav.events">Events</a>
+        <a href="mailto:nicetoursandevents@gmail.com" class="hover:underline" data-i18n="nav.contact">Contact</a>
+        <a href="booking.html" class="hover:underline font-semibold" data-i18n="nav.booking">Booking</a>
+        <span class="opacity-70">|</span>
+        <button id="btn-en" class="hover:underline">EN</button>
+        <button id="btn-pt" class="hover:underline">PT</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section style="background:linear-gradient(180deg, rgba(15,60,46,1) 0%, rgba(15,60,46,.93) 65%, rgba(15,60,46,.88) 100%);" class="text-white">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-8 items-center">
+      <!-- Texto -->
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">NICE TOURS AND EVENTS</h1>
+        <h2 class="mt-3 text-amber-300 font-extrabold uppercase tracking-wide text-lg"
+            data-i18n="hero.subtitle">
+          Luxury tours and memorable events in Europe
+        </h2>
+
+        <p class="mt-6 text-lg leading-relaxed text-emerald-50" data-i18n="hero.lead">
+          Unforgettable, tailor-made trips and events. Get in touch and we’ll fine-tune everything to your needs.
+        </p>
+
+        <!-- Tours (linkam para Booking) -->
+        <ul class="mt-6 space-y-3 text-lg list-disc list-inside">
+          <li><a href="booking.html" class="text-amber-300 hover:underline font-semibold" data-i18n="tour.castles">Castles &amp; Gardens</a></li>
+          <li><a href="booking.html" class="text-amber-300 hover:underline font-semibold" data-i18n="tour.timber">Half-Timbered Route</a></li>
+          <li><a href="booking.html" class="text-amber-300 hover:underline font-semibold" data-i18n="tour.wine">German Wine Tours</a></li>
+          <li><a href="booking.html" class="text-amber-300 hover:underline font-semibold" data-i18n="tour.rhine">Romantic Rhine</a></li>
+        </ul>
+
+        <!-- Ícones sociais -->
+        <div class="mt-6 flex items-center gap-4">
+          <span class="text-emerald-50/90" data-i18n="follow">Follow:</span>
+
+          <!-- YouTube -->
+          <a id="ytLink" href="#" target="_blank" rel="noopener" aria-label="YouTube" class="socbtn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.01 3.01 0 0 0-2.122-2.128C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.376.558A3.01 3.01 0 0 0 .502 6.186 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .502 5.814 3.01 3.01 0 0 0 2.122 2.128C4.4 20.5 12 20.5 12 20.5s7.6 0 9.376-.558a3.01 3.01 0 0 0 2.122-2.128A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.502-5.814ZM9.75 15.5v-7l6 3.5-6 3.5Z"/>
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a id="igLink" href="#" target="_blank" rel="noopener" aria-label="Instagram" class="socbtn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.35 3.608 1.325.975.975 1.263 2.242 1.325 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.35 2.633-1.325 3.608-.975.975-2.242 1.263-3.608 1.325-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.35-3.608-1.325-.975-.975-1.263-2.242-1.325-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.35-2.633 1.325-3.608.975-.975 2.242-1.263 3.608-1.325C8.416 2.175 8.796 2.163 12 2.163Zm0 4.731a5.106 5.106 0 1 0 0 10.212 5.106 5.106 0 0 0 0-10.212Zm6.534-.089a1.194 1.194 0 1 1 0 2.388 1.194 1.194 0 0 1 0-2.388Z"/>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a id="inLink" href="#" target="_blank" rel="noopener" aria-label="LinkedIn" class="socbtn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554V14.87c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.943v5.676H9.352V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.368-1.852 3.602 0 4.268 2.371 4.268 5.455v6.288zM5.337 7.433a2.063 2.063 0 1 1 0-4.126 2.063 2.063 0 0 1 0 4.126zM6.934 20.452H3.737V9h3.197v11.452z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Foto -->
+      <div class="justify-self-end w-full max-w-xl">
+        <figure class="wm imgGuard rounded-2xl overflow-hidden border-4 border-white/80 shadow-xl bg-white/5">
+          <img id="heroImg" alt="Trip image" class="w-full h-64 sm:h-80 md:h-[26rem] object-cover" loading="eager" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Últimos vídeos -->
+  <section class="bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 py-10">
+      <div class="bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,.08)] border border-black/5 p-5 sm:p-8">
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-[color:var(--forest)] mb-6" data-i18n="videos.title">Latest videos</h3>
+
+        <div class="grid sm:grid-cols-3 gap-6">
+          <div class="rounded-xl overflow-hidden border border-black/10 shadow">
+            <div class="yt-card" data-yt="w69OXzOJijU" data-start="84" data-link="https://www.youtube.com/watch?v=w69OXzOJijU&t=84s" aria-label="Play video 1">
+              <img class="yt-thumb" alt="Video 1 thumbnail" src="https://i.ytimg.com/vi/w69OXzOJijU/hqdefault.jpg" loading="lazy" decoding="async">
+              <a class="yt-open" href="https://www.youtube.com/watch?v=w69OXzOJijU&t=84s" target="_blank" rel="noopener">Open on YouTube</a>
+              <div class="yt-overlay"><div class="yt-play"><div class="yt-triangle"></div></div></div>
+            </div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden border border-black/10 shadow">
+            <div class="yt-card" data-yt="UN-7DKFzau4" data-start="1" data-link="https://www.youtube.com/watch?v=UN-7DKFzau4&t=1s" aria-label="Play video 2">
+              <img class="yt-thumb" alt="Video 2 thumbnail" src="https://i.ytimg.com/vi/UN-7DKFzau4/hqdefault.jpg" loading="lazy" decoding="async">
+              <a class="yt-open" href="https://www.youtube.com/watch?v=UN-7DKFzau4&t=1s" target="_blank" rel="noopener">Open on YouTube</a>
+              <div class="yt-overlay"><div class="yt-play"><div class="yt-triangle"></div></div></div>
+            </div>
+          </div>
+
+          <div class="rounded-xl overflow-hidden border border-black/10 shadow">
+            <div class="yt-card" data-yt="I62Agvs8mh8" data-start="164" data-link="https://www.youtube.com/watch?v=I62Agvs8mh8&t=164s" aria-label="Play video 3">
+              <img class="yt-thumb" alt="Video 3 thumbnail" src="https://i.ytimg.com/vi/I62Agvs8mh8/hqdefault.jpg" loading="lazy" decoding="async">
+              <a class="yt-open" href="https://www.youtube.com/watch?v=I62Agvs8mh8&t=164s" target="_blank" rel="noopener">Open on YouTube</a>
+              <div class="yt-overlay"><div class="yt-play"><div class="yt-triangle"></div></div></div>
+            </div>
+          </div>
+        </div>
+
+        <noscript>
+          <div class="mt-4 text-sm text-gray-600">
+            Enable JavaScript to play the videos or open them on YouTube:
+            <a href="https://www.youtube.com/watch?v=w69OXzOJijU&t=84s">1</a> ·
+            <a href="https://www.youtube.com/watch?v=UN-7DKFzau4&t=1s">2</a> ·
+            <a href="https://www.youtube.com/watch?v=I62Agvs8mh8&t=164s">3</a>
+          </div>
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[color:var(--forest)] text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      © 2025 Nice Tours and Events. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- I18N + imagem + Lite-YouTube script -->
+  <script>
+    /* ====== Social (empresa) ====== */
+    const SOCIAL = {
+      youtube:   'https://www.youtube.com/@nicetoursandevents',
+      instagram: 'https://www.instagram.com/nice_tours_and_events/',
+      linkedin:  'https://www.linkedin.com/company/108294587/'
+    };
+    document.getElementById('ytLink').href = SOCIAL.youtube;
+    document.getElementById('igLink').href = SOCIAL.instagram;
+    document.getElementById('inLink').href = SOCIAL.linkedin;
+
+    /* ====== I18N ====== */
+    const I18N = {
+      en: {
+        'nav.home':'Home','nav.about':'About','nav.tours':'Tours','nav.events':'Events','nav.contact':'Contact','nav.booking':'Booking',
+        'hero.subtitle':'Luxury tours and memorable events in Europe',
+        'hero.lead':'Unforgettable, tailor-made trips and events. Get in touch and we’ll fine-tune everything to your needs.',
+        'tour.castles':'Castles & Gardens','tour.timber':'Half-Timbered Route','tour.wine':'German Wine Tours','tour.rhine':'Romantic Rhine',
+        'follow':'Follow:','videos.title':'Latest videos'
+      },
+      'pt-BR': {
+        'nav.home':'Início','nav.about':'Sobre','nav.tours':'Passeios','nav.events':'Eventos','nav.contact':'Contato','nav.booking':'Reservas',
+        'hero.subtitle':'Tours de luxo e eventos inesquecíveis na Europa',
+        'hero.lead':'Passeios e eventos inesquecíveis, feitos sob medida para você. Entre em contato para adequarmos às suas necessidades.',
+        'tour.castles':'Castelos & Jardins','tour.timber':'Rota do Enxaimel','tour.wine':'Rota do Vinho Alemão','tour.rhine':'Reno Romântico',
+        'follow':'Siga:','videos.title':'Últimos vídeos'
+      }
+    };
+
+    function setMeta(sel,val){const el=document.querySelector(sel); if(el&&val) el.setAttribute('content',val)}
+    function applyLang(lang){
+      const d=I18N[lang]||I18N.en;
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const k=el.getAttribute('data-i18n');
+        if(d[k]!==undefined) el.textContent = d[k];
+      });
+      if(lang==='pt-BR'){
+        document.title = 'Nice Tours and Events – Tours de luxo & eventos inesquecíveis';
+        setMeta('meta[name="description"]','Tours de luxo e eventos inesquecíveis na Europa. Roteiros sob medida, degustações curadas, castelos e cidades de conto.');
+      }else{
+        document.title = 'Nice Tours and Events – Luxury tours & memorable events';
+        setMeta('meta[name="description"]','Luxury tours and memorable events in Europe. Tailor-made itineraries, curated tastings, castles and storybook towns.');
+      }
+      document.documentElement.lang = lang;
+      try{localStorage.setItem('lang',lang)}catch(e){}
+    }
+    document.getElementById('btn-en').addEventListener('click',()=>applyLang('en'));
+    document.getElementById('btn-pt').addEventListener('click',()=>applyLang('pt-BR'));
+    applyLang((()=>{try{return localStorage.getItem('lang')}catch(e){return null}})()||'en');
+
+    // hero image (capa.jpg com fallback)
+    (function(){
+      const img = document.getElementById('heroImg');
+      const list = ['capa.jpg','images/capa.jpg','Capa.jpg'];
+      let i=0; function next(){ if(i<list.length){ img.src=list[i++]; } else { img.onerror=null; } }
+      img.onerror = next; next();
+    })();
+
+    // Lite-YouTube
+    function playLite(el){
+      const id = el.getAttribute('data-yt');
+      const start = el.getAttribute('data-start')||0;
+      const origin = encodeURIComponent(location.origin);
+      const src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&start=${start}&rel=0&modestbranding=1&playsinline=1&origin=${origin}`;
+
+      el.innerHTML = `
+        <iframe class="yt-iframe"
+          src="${src}"
+          title="YouTube video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+        <a class="yt-open" href="${el.getAttribute('data-link')||`https://www.youtube.com/watch?v=${id}`}" target="_blank" rel="noopener">Open on YouTube</a>
+      `;
+    }
+    document.querySelectorAll('.yt-card').forEach(card=>{
+      card.addEventListener('click', ()=>playLite(card), {passive:true});
+      card.setAttribute('role','button');
+      card.setAttribute('tabindex','0');
+      card.addEventListener('keydown', (e)=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); playLite(card); }});
+    });
+  </script>
 </body>
 </html>
+
+
+
+
+
+
