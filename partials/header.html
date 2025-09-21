@@ -1,0 +1,60 @@
+<header class="bg-[color:var(--forest-green)] text-white">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="/index.html" class="text-xl font-bold">Nice Tours and Events</a>
+
+    <!-- Botão mobile -->
+    <button id="nav-toggle" class="md:hidden px-3 py-2 border rounded" aria-expanded="false" aria-controls="primary-nav">
+      Menu
+    </button>
+
+    <!-- Navegação (desktop) -->
+    <nav id="primary-nav" aria-label="Primary" class="hidden md:block">
+      <ul class="md:flex md:items-center md:gap-6 text-sm">
+        <li><a data-nav href="/index.html" class="hover:underline">Home</a></li>
+        <li><a data-nav href="/about.html" class="hover:underline">About</a></li>
+        <li><a data-nav href="/tours.html" class="hover:underline">Tours</a></li>
+        <li><a data-nav href="/events.html" class="hover:underline">Events</a></li>
+        <li><a data-nav href="mailto:nicetoursandevents@gmail.com" class="hover:underline">Contact</a></li>
+        <li>
+          <a href="/booking.html" class="inline-block bg-white text-[color:var(--forest-green)] font-semibold px-4 py-2 rounded hover:opacity-90">
+            Booking
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Navegação (mobile) -->
+  <nav id="mobile-nav" class="md:hidden hidden bg-white text-gray-800">
+    <ul class="px-4 py-3 space-y-2">
+      <li><a data-nav href="/index.html" class="block px-2 py-2 rounded hover:bg-gray-100">Home</a></li>
+      <li><a data-nav href="/about.html" class="block px-2 py-2 rounded hover:bg-gray-100">About</a></li>
+      <li><a data-nav href="/tours.html" class="block px-2 py-2 rounded hover:bg-gray-100">Tours</a></li>
+      <li><a data-nav href="/events.html" class="block px-2 py-2 rounded hover:bg-gray-100">Events</a></li>
+      <li><a data-nav href="mailto:nicetoursandevents@gmail.com" class="block px-2 py-2 rounded hover:bg-gray-100">Contact</a></li>
+      <li><a href="/booking.html" class="block text-center bg-[color:var(--forest-green)] text-white font-semibold px-4 py-2 rounded">Booking</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    (function () {
+      const btn = document.getElementById('nav-toggle');
+      if (!btn) return;
+      const mobile = document.getElementById('mobile-nav');
+      btn.addEventListener('click', () => {
+        const nowOpen = mobile.classList.toggle('hidden') === false;
+        btn.setAttribute('aria-expanded', nowOpen ? 'true' : 'false');
+      });
+
+      // Destacar link da página atual
+      const path = (location.pathname || '').replace(/\/$/, '');
+      document.querySelectorAll('a[data-nav]').forEach(a => {
+        const href = (a.getAttribute('href') || '').replace(/\/$/, '');
+        if (href && href === path) {
+          a.setAttribute('aria-current', 'page');
+          a.classList.add('underline', 'font-semibold');
+        }
+      });
+    })();
+  </script>
+</header>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="index,follow">
+  <title>Flower Tours – Nice Tours and Events</title>
+
+  <!-- SEO base -->
+  <link rel="canonical" href="./flower-tours.html">
+  <meta name="description" content="Spring blossoms, summer gardens and flower festivals across Germany. Tailor-made routes that pair beautifully with Castles & Gardens and Wine Tours.">
+  <meta name="author" content="Nice Tours and Events">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Flower Tours – Nice Tours and Events">
+  <meta property="og:description" content="Spring blossoms, summer gardens and flower festivals across Germany. Pair with Castles & Gardens and Wine Tours, or add Netherlands tulip fields.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./flower-tours.html">
+  <meta property="og:image" content="IMG_0156.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flower Tours – Nice Tours and Events">
+  <meta name="twitter:description" content="Tailor-made flower routes in Germany: blossoms, festivals and gardens.">
+  <meta name="twitter:image" content="IMG_0156.jpg">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristTrip",
+    "name":"Flower Tours in Germany",
+    "description":"Tailor-made flower tours through Germany: spring blossoms, summer gardens and flower festivals. Can be combined with Castles & Gardens, Wine Tours and a Netherlands tulip add-on.",
+    "touristType":"Private tailor-made",
+    "areaServed":["Germany","Europe"],
+    "image":"IMG_0156.jpg",
+    "organizer":{"@type":"Organization","name":"Nice Tours and Events"},
+    "offers":{"@type":"Offer","url":"https://www.nicetoursandevents.com/booking.html","availability":"https://schema.org/InStock","priceCurrency":"EUR","price":"0","priceSpecification":{"@type":"PriceSpecification","price":"0","priceCurrency":"EUR","description":"On request"}}
+  }
+  </script>
+
+  <!-- Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --forest:#0F3C2E }
+    body{ font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial }
+    h1,h2,h3{ font-family:"Playfair Display", ui-serif, Georgia, serif }
+
+    /* Fade mais forte no lado direito */
+    .fade-sides-strong-right{
+      /* esquerda ~10% de fade, direita ~14% de fade */
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 10%, #000 86%, transparent 100%);
+              mask-image: linear-gradient(to right, transparent 0%, #000 10%, #000 86%, transparent 100%);
+      -webkit-mask-size: 100% 100%;
+              mask-size: 100% 100%;
+      -webkit-mask-repeat: no-repeat;
+              mask-repeat: no-repeat;
+    }
+
+    /* Marca d’água reta no canto inferior direito do HERO */
+    .wm{
+      position: relative;
+    }
+    .wm::after{
+      content: "Nice Tours and Events";
+      position: absolute;
+      right: 12px; bottom: 10px;
+      font-weight: 700; font-size: 13px; letter-spacing: .04em;
+      color: rgba(255,255,255,.9);
+      text-shadow: 0 2px 6px rgba(0,0,0,.35);
+      background: rgba(0,0,0,.22);
+      padding: 6px 10px; border-radius: 8px;
+      pointer-events: none; user-select: none;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 min-h-screen">
+  <!-- Header -->
+  <header class="bg-[color:var(--forest)] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap gap-3 items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo_transparent.png" alt="Nice Tours and Events logo" class="h-24 w-auto" width="240" height="96">
+        <span class="sr-only">Nice Tours and Events</span>
+      </a>
+
+      <nav class="flex flex-wrap items-center gap-4" aria-label="Primary">
+        <a href="index.html" class="hover:underline" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="hover:underline" data-i18n="nav.about">About</a>
+        <a href="tours.html" class="hover:underline font-semibold" data-i18n="nav.tours">Tours</a>
+        <a href="events.html" class="hover:underline" data-i18n="nav.events">Events</a>
+        <a href="mailto:nicetoursandevents@gmail.com" class="hover:underline" data-i18n="nav.contact">Contact</a>
+        <a href="booking.html" class="hover:underline" data-i18n="nav.booking">Booking</a>
+        <span class="opacity-70">|</span>
+        <button id="btn-en" class="hover:underline">EN</button>
+        <button id="btn-pt" class="hover:underline">PT</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Head -->
+  <div class="max-w-6xl mx-auto px-4 pt-10 text-center">
+    <div class="text-[color:var(--forest)] font-extrabold tracking-widest uppercase text-xs mb-2" data-i18n="eyebrow">Flower Tours</div>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-[color:var(--forest)]" data-i18n="h1">Flower Tours in Germany</h1>
+    <p class="text-gray-600 mt-2" data-i18n="subtitle">Spring blossoms, summer gardens & flower festivals</p>
+  </div>
+
+  <!-- Hero (apenas com fade + marca d’água) -->
+  <section class="max-w-5xl mx-auto px-4 pt-6">
+    <figure class="rounded-2xl overflow-hidden border-4 border-[color:var(--forest)] shadow-xl bg-white max-w-3xl mx-auto wm">
+      <img
+        src="IMG_0156.jpg"
+        alt="Hydrangeas and spring flowers along a garden path in Germany"
+        class="w-full h-auto object-contain fade-sides-strong-right"
+        width="1200" height="1600" loading="lazy" decoding="async">
+    </figure>
+  </section>
+
+  <!-- Intro + details -->
+  <section class="max-w-5xl mx-auto px-4 pt-6">
+    <div class="bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,.10)] border border-black/5 p-6 sm:p-8 grid md:grid-cols-2 gap-6 md:gap-10 items-start">
+      <div class="order-2 md:order-1 text-lg leading-relaxed text-gray-700">
+        <h2 class="text-2xl font-extrabold text-[color:var(--forest)] mb-3" data-i18n="h2">Bloom season your way</h2>
+
+        <p class="mb-4" data-i18n="p1">
+          When winter fades, Germany bursts into colour: orchards in bloom, flower festivals, themed gardens and leafy parks. We tailor each day for gentle walks, scenic viewpoints and relaxed café stops.
+        </p>
+
+        <h3 class="text-xl font-extrabold text-[color:var(--forest)] mt-4" data-i18n="how.t">Two easy approaches</h3>
+        <p class="mb-3" data-i18n="how.d">1) Base-and-daytrips around one region; 2) Or link 2–3 areas for a broader mosaic of blossoms and gardens.</p>
+
+        <h3 class="text-xl font-extrabold text-[color:var(--forest)] mt-2" data-i18n="combo.t">Perfect combinations</h3>
+        <p data-i18n="combo.d">
+          Flower Tours pair beautifully with the
+          <a href="castles-and-gardens.html" class="underline font-semibold">Castles &amp; Gardens</a> itinerary and with
+          <a href="wine-tour-germany.html" class="underline font-semibold">Wine Tours</a> for vineyard valleys in spring and summer.
+        </p>
+      </div>
+
+      <div class="order-1 md:order-2">
+        <ul class="space-y-3 text-gray-700">
+          <li class="grid grid-cols-[auto,1fr] gap-x-3">
+            <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.when.t">Best time:</span>
+            <span data-i18n="facts.when.d">Mar–Jun (spring blossoms) • Jul–Sep (summer gardens).</span>
+          </li>
+          <li class="grid grid-cols-[auto,1fr] gap-x-3">
+            <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.where.t">Where:</span>
+            <span data-i18n="facts.where.d">Historic towns, parks and show gardens across Germany.</span>
+          </li>
+          <li class="grid grid-cols-[auto,1fr] gap-x-3">
+            <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.style.t">Style:</span>
+            <span data-i18n="facts.style.d">Gentle pace • curated photo stops • cafés & viewpoints.</span>
+          </li>
+          <li class="grid grid-cols-[auto,1fr] gap-x-3">
+            <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.custom.t">Custom:</span>
+            <span data-i18n="facts.custom.d">Private, tailor-made itineraries to match your time and interests.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Netherlands add-on (com foto) -->
+  <section class="max-w-5xl mx-auto px-4 pt-6">
+    <div class="rounded-2xl border border-emerald-200 bg-emerald-50 p-6 sm:p-8 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+      <div>
+        <h3 class="text-xl font-extrabold text-[color:var(--forest)] mb-2" data-i18n="nl.t">Optional add-on: Netherlands tulip fields</h3>
+        <p class="text-lg leading-relaxed text-gray-700" data-i18n="nl.d">
+          Add a 1–2 day extension in the Netherlands during tulip season (roughly late Mar–May) to see bulb fields and famous gardens.
+        </p>
+      </div>
+      <figure class="rounded-xl overflow-hidden shadow border border-black/10">
+        <div class="aspect-[4/3] w-full">
+          <img src="pexels-helen1-6663777.jpg"
+               alt="Curving garden path filled with tulips in a wooded park"
+               class="w-full h-full object-cover" loading="lazy" decoding="async" width="1156" height="768">
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-5xl mx-auto px-4 py-8">
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="booking.html" class="inline-block bg-[color:var(--forest)] text-white px-5 py-2 rounded-lg font-bold shadow hover:brightness-95" data-i18n="cta.book">
+        Book your tour
+      </a>
+      <a href="tours.html" class="inline-block border-2 border-[color:var(--forest)] text-[color:var(--forest)] px-5 py-2 rounded-lg font-bold hover:bg-emerald-50" data-i18n="cta.all">
+        See all tours
+      </a>
+    </div>
+  </section>
+
+  <!-- Related (2 cards) -->
+  <section class="max-w-5xl mx-auto px-4 pb-12 grid sm:grid-cols-2 gap-4">
+    <a href="castles-and-gardens.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+      <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.castles.t">Castles &amp; Gardens</h3>
+      <p class="text-gray-600" data-i18n="card.castles.d">Palaces, landscaped gardens and scenic viewpoints.</p>
+    </a>
+    <a href="wine-tour-germany.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+      <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.wine.t">Wine Tours</h3>
+      <p class="text-gray-600" data-i18n="card.wine.d">Mosel (Moselle), Rhine and the German Wine Route with curated tastings.</p>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[color:var(--forest)] text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      &copy; 2025 Nice Tours and Events. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- I18N -->
+  <script>
+    const I18N = {
+      'en': {
+        'meta.title':'Flower Tours – Nice Tours and Events',
+        'meta.description':'Spring blossoms, summer gardens and flower festivals across Germany. Tailor-made routes that pair beautifully with Castles & Gardens and Wine Tours.',
+        'og.title':'Flower Tours – Nice Tours and Events',
+        'og.description':'Spring blossoms, summer gardens and flower festivals. Pair with Castles & Gardens and Wine Tours, or add Netherlands tulip fields.',
+        'tw.title':'Flower Tours – Nice Tours and Events',
+        'tw.description':'Tailor-made flower routes in Germany: blossoms, festivals and gardens.',
+        'nav.home':'Home','nav.about':'About','nav.tours':'Tours','nav.events':'Events','nav.contact':'Contact','nav.booking':'Booking',
+        'eyebrow':'Flower Tours','h1':'Flower Tours in Germany',
+        'subtitle':'Spring blossoms, summer gardens & flower festivals',
+        'h2':'Bloom season your way',
+        'p1':'When winter fades, Germany bursts into colour: orchards in bloom, flower festivals, themed gardens and leafy parks. We tailor each day for gentle walks, scenic viewpoints and relaxed café stops.',
+        'how.t':'Two easy approaches',
+        'how.d':'1) Base-and-daytrips around one region; 2) Or link 2–3 areas for a broader mosaic of blossoms and gardens.',
+        'combo.t':'Perfect combinations',
+        'combo.d':'Flower Tours pair beautifully with the Castles & Gardens itinerary and with Wine Tours for vineyard valleys in spring and summer.',
+        'facts.when.t':'Best time:','facts.when.d':'Mar–Jun (spring blossoms) • Jul–Sep (summer gardens).',
+        'facts.where.t':'Where:','facts.where.d':'Historic towns, parks and show gardens across Germany.',
+        'facts.style.t':'Style:','facts.style.d':'Gentle pace • curated photo stops • cafés & viewpoints.',
+        'facts.custom.t':'Custom:','facts.custom.d':'Private, tailor-made itineraries to match your time and interests.',
+        'nl.t':'Optional add-on: Netherlands tulip fields',
+        'nl.d':'Add a 1–2 day extension in the Netherlands during tulip season (roughly late Mar–May) to see bulb fields and famous gardens.',
+        'cta.book':'Book your tour','cta.all':'See all tours',
+        'card.castles.t':'Castles & Gardens','card.castles.d':'Palaces, landscaped gardens and scenic viewpoints.',
+        'card.wine.t':'Wine Tours',
+        'card.wine.d':'Mosel (Moselle), Rhine and the German Wine Route with curated tastings.'
+      },
+      'pt-BR': {
+        'meta.title':'Tour das Flores – Nice Tours and Events',
+        'meta.description':'Primavera em flor, jardins de verão e festivais por toda a Alemanha. Roteiros sob medida que combinam com Castelos & Jardins e Tours de Vinho.',
+        'og.title':'Tour das Flores – Nice Tours and Events',
+        'og.description':'Blossoms, jardins e festivais de flores. Combine com Castelos & Jardins e Tours de Vinho, ou acrescente os campos de tulipas na Holanda.',
+        'tw.title':'Tour das Flores – Nice Tours and Events',
+        'tw.description':'Roteiros floridos sob medida na Alemanha: flores, festivais e jardins.',
+        'nav.home':'Início','nav.about':'Sobre','nav.tours':'Passeios','nav.events':'Eventos','nav.contact':'Contato','nav.booking':'Reservas',
+        'eyebrow':'Tour das Flores','h1':'Tour das Flores na Alemanha',
+        'subtitle':'Primavera em flor, jardins de verão e festivais de flores',
+        'h2':'A estação das flores do seu jeito',
+        'p1':'Quando o inverno vai embora, a Alemanha ganha cor: pomares floridos, festivais de flores, jardins temáticos e parques arborizados. Montamos cada dia para caminhadas leves, mirantes cênicos e cafés sem pressa.',
+        'how.t':'Duas formas fáceis de fazer',
+        'how.d':'1) Bate-voltas a partir de uma base; 2) Ou conecte 2–3 regiões para um mosaico maior de flores e jardins.',
+        'combo.t':'Combinações perfeitas',
+        'combo.d':'O Tour das Flores combina muito com <strong>Castelos & Jardins</strong> e com os <strong>Tours de Vinho</strong>, ótimos na primavera e no verão.',
+        'facts.when.t':'Melhor época:','facts.when.d':'mar–jun (primavera) • jul–set (jardins de verão).',
+        'facts.where.t':'Onde:','facts.where.d':'Cidades históricas, parques e jardins de exposição pela Alemanha.',
+        'facts.style.t':'Estilo:','facts.style.d':'Ritmo tranquilo • paradas fotográficas selecionadas • cafés e mirantes.',
+        'facts.custom.t':'Sob medida:','facts.custom.d':'Roteiros privados e personalizados conforme seu tempo e interesses.',
+        'nl.t':'Opcional: flores da Holanda',
+        'nl.d':'Inclua 1–2 dias na Holanda na época das tulipas (aprox. fim de mar–mai) para ver campos floridos e jardins famosos.',
+        'cta.book':'Reserve seu tour','cta.all':'Todos os tours',
+        'card.castles.t':'Castelos & Jardins','card.castles.d':'Palácios, jardins planejados e mirantes cênicos.',
+        'card.wine.t':'Tours de Vinho',
+        'card.wine.d':'Vale do Mosela, Reno e a Rota do Vinho Alemão com degustações curadas.'
+      }
+    };
+
+    function setMeta(sel,val){const el=document.querySelector(sel); if(el&&val) el.setAttribute('content',val)}
+    function applyLang(lang){
+      const d=I18N[lang]||I18N['en'];
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const k=el.getAttribute('data-i18n');
+        if(d[k]!==undefined){
+          if(k==='combo.d') el.innerHTML=d[k];
+          else el.textContent=d[k];
+        }
+      });
+      document.title=d['meta.title']||document.title;
+      setMeta('meta[name="description"]',d['meta.description']);
+      setMeta('meta[property="og:title"]',d['og.title']);
+      setMeta('meta[property="og:description"]',d['og.description']);
+      setMeta('meta[name="twitter:title"]',d['tw.title']);
+      setMeta('meta[name="twitter:description"]',d['tw.description']);
+      document.documentElement.lang=lang;
+      try{localStorage.setItem('lang',lang)}catch(e){}
+    }
+    document.getElementById('btn-en').addEventListener('click',()=>applyLang('en'));
+    document.getElementById('btn-pt').addEventListener('click',()=>applyLang('pt-BR'));
+    applyLang((()=>{try{return localStorage.getItem('lang')}catch(e){return null}})()||'en');
+  </script>
+</body>
+</html>
+
+
+

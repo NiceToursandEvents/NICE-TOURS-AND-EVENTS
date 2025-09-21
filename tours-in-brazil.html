@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="index,follow">
+  <title>Tours in Brazil – Nice Tours and Events</title>
+
+  <!-- SEO -->
+  <link rel="canonical" href="./tours-brazil.html">
+  <meta name="description" content="Private, tailor-made tours in Brazil: historic towns & nature, Brazilian coast with paradise beaches, and scenic highlands (serras).">
+  <meta name="author" content="Nice Tours and Events">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Tours in Brazil – Nice Tours and Events">
+  <meta property="og:description" content="Historic towns & nature, Brazilian coast with paradise beaches, and scenic highlands.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./tours-brazil.html">
+  <meta property="og:image" content="logo_transparent.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tours in Brazil – Nice Tours and Events">
+  <meta name="twitter:description" content="Historic towns & nature, Brazilian coast and scenic highlands.">
+  <meta name="twitter:image" content="logo_transparent.png">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristTrip",
+    "name":"Private Tours in Brazil",
+    "description":"Tailor-made tours across Brazil: historic towns & nature, Brazilian coast with paradise beaches, and scenic highlands (serras).",
+    "touristType":"Private tailor-made",
+    "areaServed":["Brazil","South America"],
+    "image":"logo_transparent.png",
+    "organizer":{"@type":"Organization","name":"Nice Tours and Events"},
+    "offers":{"@type":"Offer","url":"https://www.nicetoursandevents.com/booking.html","availability":"https://schema.org/InStock","priceCurrency":"EUR","price":"0","priceSpecification":{"@type":"PriceSpecification","price":"0","priceCurrency":"EUR","description":"On request"}}
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>:root{--forest:#0F3C2E}</style>
+</head>
+<body class="bg-white text-gray-800 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-[color:var(--forest)] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap gap-3 items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo_transparent.png" alt="Nice Tours and Events logo" class="h-24 w-auto" width="240" height="96">
+        <span class="sr-only">Nice Tours and Events</span>
+      </a>
+
+      <nav class="flex flex-wrap items-center gap-4" aria-label="Primary">
+        <a href="index.html" class="hover:underline" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="hover:underline" data-i18n="nav.about">About</a>
+        <a href="tours.html" class="hover:underline font-semibold" data-i18n="nav.tours">Tours</a>
+        <a href="events.html" class="hover:underline" data-i18n="nav.events">Events</a>
+        <a href="mailto:nicetoursandevents@gmail.com" class="hover:underline" data-i18n="nav.contact">Contact</a>
+        <a href="booking.html" class="hover:underline" data-i18n="nav.booking">Booking</a>
+        <span class="opacity-70">|</span>
+        <button id="btn-en" class="hover:underline">EN</button>
+        <button id="btn-pt" class="hover:underline">PT</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Head -->
+  <div class="max-w-6xl mx-auto px-4 pt-10 text-center">
+    <div class="text-[color:var(--forest)] font-extrabold tracking-widest uppercase text-xs mb-2" data-i18n="eyebrow">Brazil Tours</div>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-[color:var(--forest)]" data-i18n="h1">Tours in Brazil</h1>
+    <p class="text-gray-600 mt-2" data-i18n="subtitle">Historic towns &amp; nature</p>
+  </div>
+
+  <!-- Intro + Video -->
+  <section class="max-w-6xl mx-auto px-4 pt-6">
+    <div class="bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,.10)] border border-black/5 p-6 sm:p-8 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+      <div class="order-2 md:order-1 text-lg leading-relaxed text-gray-700">
+        <p class="mb-4" data-i18n="p1">
+          Brazil is vast and beautiful: historic towns framed by lush nature, the Brazilian coast with paradise beaches, and scenic highlands (serras). We tailor a relaxed route that fits your time and style.
+        </p>
+        <p data-i18n="p2">
+          Combine days along the Brazilian coast with viewpoints in the highlands, waterfalls or Atlantic Forest trails — always with curated stops and flexible pacing.
+        </p>
+
+        <ul class="mt-5 grid sm:grid-cols-2 gap-3 text-sm">
+          <li class="px-3 py-2 rounded-lg border border-emerald-200 bg-emerald-50 text-emerald-900" data-i18n="chip.coast">Brazilian coast</li>
+          <li class="px-3 py-2 rounded-lg border border-emerald-200 bg-emerald-50 text-emerald-900" data-i18n="chip.serra">Serra highlands</li>
+          <li class="px-3 py-2 rounded-lg border border-emerald-200 bg-emerald-50 text-emerald-900" data-i18n="chip.colonial">Historic towns</li>
+          <li class="px-3 py-2 rounded-lg border border-emerald-200 bg-emerald-50 text-emerald-900" data-i18n="chip.nature">Waterfalls & viewpoints</li>
+        </ul>
+
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a href="booking.html" class="inline-block bg-[color:var(--forest)] text-white px-5 py-2 rounded-lg font-bold shadow hover:brightness-95" data-i18n="cta.book">
+            Book your tour
+          </a>
+          <a href="tours.html" class="inline-block border-2 border-[color:var(--forest)] text-[color:var(--forest)] px-5 py-2 rounded-lg font-bold hover:bg-emerald-50" data-i18n="cta.all">
+            See all tours
+          </a>
+        </div>
+      </div>
+
+      <div class="order-1 md:order-2">
+        <div class="w-full aspect-video rounded-2xl overflow-hidden border-4 border-[color:var(--forest)] shadow-xl">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube-nocookie.com/embed/yBg0qpCx0CU?rel=0&modestbranding=1"
+            title="Tours in Brazil"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Iguaçu / Cataratas highlight -->
+  <section class="max-w-6xl mx-auto px-4 py-8">
+    <div class="rounded-2xl overflow-hidden border-4 border-[color:var(--forest)] shadow-xl">
+      <img id="cataratasImg" alt="Iguaçu Falls panorama at golden hour" class="w-full h-56 sm:h-72 md:h-96 object-cover" loading="lazy" decoding="async">
+    </div>
+    <p class="text-center text-gray-600 mt-3 text-sm" data-i18n="cataratas.caption">
+      Iguaçu Falls — one of South America’s grand natural spectacles
+    </p>
+  </section>
+
+  <!-- Related -->
+  <section class="max-w-6xl mx-auto px-4 pb-10 grid sm:grid-cols-2 gap-4">
+    <a href="tours-ireland.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+      <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.ire.t">Tours in Ireland</h3>
+      <p class="text-gray-600" data-i18n="card.ire.d">Wild Atlantic Way & Causeway Coast with castles and cozy pubs.</p>
+    </a>
+    <a href="wine-tour-germany.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+      <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.wine.t">Wine Tours in Germany</h3>
+      <p class="text-gray-600" data-i18n="card.wine.d">Vale do Mosela, Reno e a Rota do Vinho Alemão, com degustações curadas.</p>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[color:var(--forest)] text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      &copy; 2025 Nice Tours and Events. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- I18N + image fallback -->
+  <script>
+    const I18N = {
+      'en': {
+        'meta.title':'Tours in Brazil – Nice Tours and Events',
+        'meta.description':'Private, tailor-made tours in Brazil: historic towns & nature, Brazilian coast with paradise beaches, and scenic highlands (serras).',
+        'og.title':'Tours in Brazil – Nice Tours and Events',
+        'og.description':'Historic towns & nature, Brazilian coast with paradise beaches, and scenic highlands.',
+        'tw.title':'Tours in Brazil – Nice Tours and Events',
+        'tw.description':'Curated Brazil itineraries: historic towns & nature, Brazilian coast and scenic highlands.',
+        'nav.home':'Home','nav.about':'About','nav.tours':'Tours','nav.events':'Events','nav.contact':'Contact','nav.booking':'Booking',
+        'eyebrow':'Brazil Tours','h1':'Tours in Brazil',
+        'subtitle':'Historic towns & nature',
+        'p1':'Brazil is vast and beautiful: historic towns framed by lush nature, the Brazilian coast with paradise beaches, and scenic highlands (serras). We tailor a relaxed route that fits your time and style.',
+        'p2':'Combine days along the Brazilian coast with viewpoints in the highlands, waterfalls or Atlantic Forest trails — always with curated stops and flexible pacing.',
+        'chip.coast':'Brazilian coast','chip.serra':'Serra highlands','chip.colonial':'Historic towns','chip.nature':'Waterfalls & viewpoints',
+        'cta.book':'Book your tour','cta.all':'See all tours',
+        'cataratas.caption':'Iguaçu Falls — one of South America’s grand natural spectacles',
+        'card.ire.t':'Tours in Ireland','card.ire.d':'Wild Atlantic Way & Causeway Coast with castles and cozy pubs.',
+        'card.wine.t':'Wine Tours in Germany','card.wine.d':'Moselle Valley, Rhine and the German Wine Route with curated tastings.'
+      },
+      'pt-BR': {
+        'meta.title':'Passeios no Brasil – Nice Tours and Events',
+        'meta.description':'Passeios privados no Brasil: cidades históricas e natureza, praias paradisíacas e serras cênicas.',
+        'og.title':'Passeios no Brasil – Nice Tours and Events',
+        'og.description':'Cidades históricas e natureza, praias paradisíacas e serras cênicas.',
+        'tw.title':'Passeios no Brasil – Nice Tours and Events',
+        'tw.description':'Roteiros curados: cidades históricas e natureza, praias paradisíacas e serras.',
+        'nav.home':'Início','nav.about':'Sobre','nav.tours':'Passeios','nav.events':'Eventos','nav.contact':'Contato','nav.booking':'Reservas',
+        'eyebrow':'Passeios no Brasil','h1':'Passeios no Brasil',
+        'subtitle':'Cidades históricas e natureza',
+        'p1':'O Brasil é enorme e lindo: cidades históricas em meio à natureza, a costa brasileira com praias paradisíacas e serras cênicas. Montamos um roteiro tranquilo conforme o seu tempo e estilo.',
+        'p2':'Combine dias pelas praias do Brasil com mirantes nas serras, cachoeiras ou trilhas na Mata Atlântica — com paradas curadas e ritmo flexível.',
+        'chip.coast':'Praias paradisíacas','chip.serra':'Serras (highlands)','chip.colonial':'Cidades históricas','chip.nature':'Cachoeiras & mirantes',
+        'cta.book':'Reservar tour','cta.all':'Ver todos os tours',
+        'cataratas.caption':'Cataratas do Iguaçu — um dos maiores espetáculos naturais da América do Sul',
+        'card.ire.t':'Passeios na Irlanda','card.ire.d':'Wild Atlantic Way e Causeway Coast com castelos e pubs acolhedores.',
+        'card.wine.t':'Tours de Vinho na Alemanha','card.wine.d':'Vale do Mosela, Reno e a Rota do Vinho Alemão, com degustações curadas.'
+      }
+    };
+
+    function setMeta(sel,val){const el=document.querySelector(sel); if(el&&val) el.setAttribute('content',val)}
+    function applyLang(lang){
+      const d=I18N[lang]||I18N.en;
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const k=el.getAttribute('data-i18n');
+        if(d[k]!==undefined){ el.innerHTML=d[k]; }
+      });
+      document.title=d['meta.title']||document.title;
+      setMeta('meta[name="description"]',d['meta.description']);
+      setMeta('meta[property="og:title"]',d['og.title']);
+      setMeta('meta[property="og:description"]',d['og.description']);
+      setMeta('meta[name="twitter:title"]',d['tw.title']);
+      setMeta('meta[name="twitter:description"]',d['tw.description']);
+      document.documentElement.lang=lang;
+      try{localStorage.setItem('lang',lang)}catch(e){}
+    }
+    document.getElementById('btn-en').addEventListener('click',()=>applyLang('en'));
+    document.getElementById('btn-pt').addEventListener('click',()=>applyLang('pt-BR'));
+    applyLang((()=>{try{return localStorage.getItem('lang')}catch(e){return null}})()||'en');
+
+    // Image fallback loader for cataratas
+    (function(){
+      const img=document.getElementById('cataratasImg');
+      const list=['cataratas.jpg','images/cataratas.jpg','Cataratas.jpg','iguacu.jpg'];
+      let i=0;
+      function next(){ if(i<list.length){ img.src=list[i++]; } else { img.onerror=null; } }
+      img.onerror=next; next();
+    })();
+  </script>
+</body>
+</html>
+
+
+

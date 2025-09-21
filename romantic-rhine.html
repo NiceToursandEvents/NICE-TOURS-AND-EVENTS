@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Romantic Rhine – Nice Tours and Events</title>
+
+  <!-- SEO -->
+  <link rel="canonical" href="./romantic-rhine.html"/>
+  <meta name="description" content="Sail or drive the most scenic stretch of the Rhine: castles, vineyards and storybook towns. Optionally combine with Castles & Gardens or the Half-Timbered Route.">
+  <meta name="author" content="Nice Tours and Events">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Romantic Rhine – Nice Tours and Events">
+  <meta property="og:description" content="Castles, vineyards and storybook villages along Germany’s most iconic river. Combine with Castles & Gardens or the Half-Timbered Route.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./romantic-rhine.html">
+  <meta property="og:image" content="pexels-gsn-travel-28277491.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Romantic Rhine – Nice Tours and Events">
+  <meta name="twitter:description" content="Castles, vineyards and storybook villages along Germany’s most iconic river.">
+  <meta name="twitter:image" content="pexels-gsn-travel-28277491.jpg">
+
+  <!-- JSON-LD: Service (Tour) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Romantic Rhine Tour",
+    "provider":{"@type":"Organization","name":"Nice Tours and Events"},
+    "areaServed":[{"@type":"Place","name":"Rhine Valley, Germany"}],
+    "availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://www.nicetoursandevents.com/booking.html"}
+  }
+  </script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root { --forest:#0F3C2E; }
+    html,body{height:100%}
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 min-h-screen">
+  <!-- Header -->
+  <header class="bg-[color:var(--forest)] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap gap-3 items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo_transparent.png" alt="Nice Tours and Events logo" class="h-24 w-auto">
+        <span class="sr-only">Nice Tours and Events</span>
+      </a>
+
+      <nav class="flex flex-wrap items-center gap-4" aria-label="Primary">
+        <a href="index.html" class="hover:underline" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="hover:underline" data-i18n="nav.about">About</a>
+        <a href="tours.html" class="hover:underline" data-i18n="nav.tours">Tours</a>
+        <a href="events.html" class="hover:underline" data-i18n="nav.events">Events</a>
+        <a href="mailto:nicetoursandevents@gmail.com" class="hover:underline" data-i18n="nav.contact">Contact</a>
+        <a href="booking.html" class="hover:underline font-semibold" data-i18n="nav.booking">Booking</a>
+        <span class="opacity-70">|</span>
+        <button id="btn-en" class="hover:underline">EN</button>
+        <button id="btn-pt" class="hover:underline">PT</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Romantic Rhine Section -->
+  <main>
+    <section class="py-12">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-[color:var(--forest)] mb-2" data-i18n="h1">
+          Romantic Rhine
+        </h1>
+        <p class="text-gray-600 mb-6" data-i18n="subtitle">
+          castles, vineyards & storybook villages along Germany’s most iconic river
+        </p>
+
+        <div class="text-lg leading-relaxed text-gray-700 text-left md:text-center space-y-4">
+          <p data-i18n="p1">
+            Trace the Rhine’s most scenic sweep with a curated route that blends river views, hilltop castles and postcard-pretty towns. Whether by car with photo stops or by boat between riverside villages, this is a day of timeless scenery at a relaxed pace.
+          </p>
+          <p data-i18n="p2">
+            Think cobbled lanes and half-timbered façades, gothic spires and terraced vineyards. Depending on the season and your interests, we can include a gentle cruise, short strolls, a Riesling tasting, and classic viewpoints such as Loreley.
+          </p>
+          <p data-i18n="p3">
+            Want to elevate it further? Pair the Romantic Rhine with the region’s
+            <a href="castles-and-gardens.html" class="underline font-semibold">Castles &amp; Gardens</a>
+            or follow the charm of historic
+            <a href="half-timbered-tours.html" class="underline font-semibold">half-timbered towns</a>
+            that dot the valley — a seamless combination of nature, heritage and elegance.
+          </p>
+        </div>
+
+        <img id="rhineHero"
+             src="pexels-gsn-travel-28277491.jpg"
+             alt="Scenic view of the Rhine River with castle"
+             class="mx-auto mt-8 rounded-lg shadow-lg max-w-3xl w-full border-4 border-[color:var(--forest)] object-cover"/>
+
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a href="booking.html" class="inline-block bg-[color:var(--forest)] text-white px-5 py-2 rounded-lg font-bold shadow hover:brightness-95" data-i18n="cta.book">
+            Book this tour
+          </a>
+          <a href="tours.html" class="inline-block border-2 border-[color:var(--forest)] text-[color:var(--forest)] px-5 py-2 rounded-lg font-bold hover:bg-emerald-50" data-i18n="cta.all">
+            See all tours
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related (cards) -->
+    <section class="max-w-5xl mx-auto px-4 pb-12 grid sm:grid-cols-2 gap-4">
+      <a href="castles-and-gardens.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+        <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.castles.t">Castles &amp; Gardens</h3>
+        <p class="text-gray-600" data-i18n="card.castles.d">Elegant palaces and manicured gardens that pair beautifully with river landscapes.</p>
+      </a>
+      <a href="half-timbered-tours.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+        <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.timber.t">Half-Timbered Route</h3>
+        <p class="text-gray-600" data-i18n="card.timber.d">Storybook towns with cobbled streets and classic façades along the Rhine valley.</p>
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[color:var(--forest)] text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      &copy; 2025 Nice Tours and Events. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // I18N EN/PT (com SEO dinâmico). Inglês é sempre o padrão inicial.
+    const I18N = {
+      'en': {
+        // SEO
+        'meta.title':'Romantic Rhine – Nice Tours and Events',
+        'meta.description':'Sail or drive the most scenic stretch of the Rhine: castles, vineyards and storybook towns. Optionally combine with Castles & Gardens or the Half-Timbered Route.',
+        'og.title':'Romantic Rhine – Nice Tours and Events',
+        'og.description':'Castles, vineyards and storybook villages along Germany’s most iconic river.',
+        'tw.title':'Romantic Rhine – Nice Tours and Events',
+        'tw.description':'Castles, vineyards and storybook villages along Germany’s most iconic river.',
+        // Nav
+        'nav.home':'Home','nav.about':'About','nav.tours':'Tours','nav.events':'Events','nav.contact':'Contact','nav.booking':'Booking',
+        // Content
+        'h1':'Romantic Rhine',
+        'subtitle':'castles, vineyards & storybook villages along Germany’s most iconic river',
+        'p1':'Trace the Rhine’s most scenic sweep with a curated route that blends river views, hilltop castles and postcard-pretty towns. Whether by car with photo stops or by boat between riverside villages, this is a day of timeless scenery at a relaxed pace.',
+        'p2':'Think cobbled lanes and half-timbered façades, gothic spires and terraced vineyards. Depending on the season and your interests, we can include a gentle cruise, short strolls, a Riesling tasting, and classic viewpoints such as Loreley.',
+        'p3':'Want to elevate it further? Pair the Romantic Rhine with the region’s Castles & Gardens or follow the charm of historic half-timbered towns that dot the valley — a seamless combination of nature, heritage and elegance.',
+        'cta.book':'Book this tour','cta.all':'See all tours',
+        'card.castles.t':'Castles & Gardens','card.castles.d':'Elegant palaces and manicured gardens that pair beautifully with river landscapes.',
+        'card.timber.t':'Half-Timbered Route','card.timber.d':'Storybook towns with cobbled streets and classic façades along the Rhine valley.'
+      },
+      'pt-BR': {
+        // SEO
+        'meta.title':'Reno Romântico – Nice Tours and Events',
+        'meta.description':'De carro ou de barco, percorra o trecho mais cênico do Reno: castelos, vinhedos e vilarejos de conto de fadas. Combine com Castelos & Jardins ou com a Rota do Enxaimel.',
+        'og.title':'Reno Romântico – Nice Tours and Events',
+        'og.description':'Castelos, vinhedos e vilarejos encantadores ao longo do rio mais icônico da Alemanha.',
+        'tw.title':'Reno Romântico – Nice Tours and Events',
+        'tw.description':'Castelos, vinhedos e vilarejos encantadores ao longo do rio mais icônico da Alemanha.',
+        // Nav
+        'nav.home':'Início','nav.about':'Sobre','nav.tours':'Passeios','nav.events':'Eventos','nav.contact':'Contato','nav.booking':'Reservas',
+        // Content
+        'h1':'Reno Romântico',
+        'subtitle':'castelos, vinhedos e vilarejos de conto de fadas ao longo do rio',
+        'p1':'Siga o trecho mais cênico do Reno com um roteiro curado que reúne mirantes, castelos no alto das colinas e cidades de cartão-postal. De carro, com paradas para fotos, ou de barco entre as margens, é um dia de paisagens atemporais em ritmo confortável.',
+        'p2':'Pense em ruas de paralelepípedo e fachadas enxaimel, torres góticas e vinhedos em terraços. Conforme a estação e o seu interesse, podemos incluir mini-cruzeiro, caminhadas curtas, degustação de Riesling e mirantes clássicos como a Loreley.',
+        'p3':'Quer deixar ainda mais especial? Combine o Reno Romântico com os <strong>Castelos & Jardins</strong> da região ou siga o encanto das históricas <strong>cidades enxaimel</strong> que pontilham o vale — natureza, patrimônio e elegância em perfeita harmonia.',
+        'cta.book':'Reservar este passeio','cta.all':'Ver todos os passeios',
+        'card.castles.t':'Castelos & Jardins','card.castles.d':'Palácios elegantes e jardins impecáveis que combinam perfeitamente com a paisagem do rio.',
+        'card.timber.t':'Rota do Enxaimel','card.timber.d':'Cidades de conto, com ruas de pedra e fachadas clássicas ao longo do vale do Reno.'
+      }
+    };
+
+    function setMeta(selector, value){
+      const el = document.querySelector(selector);
+      if(el && value) el.setAttribute('content', value);
+    }
+
+    function applyLang(lang){
+      const d = I18N[lang] || I18N['en'];
+
+      // Atualiza textos
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const k = el.getAttribute('data-i18n');
+        if(d[k] !== undefined){
+          // p3 PT tem <strong>
+          if(k === 'p3') el.innerHTML = d[k];
+          else el.textContent = d[k];
+        }
+      });
+
+      // SEO dinâmico
+      document.title = d['meta.title'] || document.title;
+      setMeta('meta[name="description"]', d['meta.description']);
+      setMeta('meta[property="og:title"]', d['og.title']);
+      setMeta('meta[property="og:description"]', d['og.description']);
+      setMeta('meta[name="twitter:title"]', d['tw.title']);
+      setMeta('meta[name="twitter:description"]', d['tw.description']);
+
+      document.documentElement.lang = lang;
+      try{ localStorage.setItem('lang', lang);}catch(e){}
+    }
+
+    // Botões de idioma
+    document.getElementById('btn-en').addEventListener('click', ()=>applyLang('en'));
+    document.getElementById('btn-pt').addEventListener('click', ()=>applyLang('pt-BR'));
+
+    // Inglês sempre primeiro (a menos que o usuário tenha salvo outra opção)
+    const saved = (()=>{try{return localStorage.getItem('lang')}catch(e){return null}})();
+    applyLang(saved || 'en');
+
+    // Fallback de imagem, caso o nome mude
+    (function(){
+      const el = document.getElementById('rhineHero');
+      if(!el) return;
+      const candidates = [
+        'pexels-gsn-travel-28277491.jpg',
+        'romantic-rhine.jpg',
+        'images/romantic-rhine.jpg',
+        'Capa.jpg'
+      ];
+      let i = 0;
+      el.onerror = function(){
+        if(i < candidates.length - 1){ i++; el.src = candidates[i]; }
+        else { el.onerror = null; }
+      };
+    })();
+  </script>
+</body>
+</html>
+
+

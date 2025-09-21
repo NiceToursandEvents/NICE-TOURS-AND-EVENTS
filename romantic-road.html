@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="index,follow">
+  <title>Romantic Road – Nice Tours and Events</title>
+
+  <!-- SEO base -->
+  <link rel="canonical" href="./romantic-road.html">
+  <meta name="description" content="Drive Germany’s Romantic Road (Romantische Straße): 29 towns over 460 km, from Würzburg to Füssen and Neuschwanstein. Tailor-made private tour.">
+  <meta name="author" content="Nice Tours and Events">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Romantic Road – Nice Tours and Events">
+  <meta property="og:description" content="Storybook towns and scenic roads: 29 towns across 460 km. Finish in the Bavarian Alps by Neuschwanstein. Private, tailor-made itineraries.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./romantic-road.html">
+  <meta property="og:image" content="pexels-pixabay-46970.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Romantic Road – Nice Tours and Events">
+  <meta name="twitter:description" content="From Würzburg to Füssen: 29 towns, 460 km, castles and cobbled squares.">
+  <meta name="twitter:image" content="pexels-pixabay-46970.jpg">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristTrip",
+    "name":"Romantic Road (Romantische Straße)",
+    "description":"Tailor-made journey on Germany’s Romantic Road: 29 towns over 460 km from Würzburg to Füssen, including Rothenburg ob der Tauber, Dinkelsbühl and Neuschwanstein Castle.",
+    "touristType":"Private tailor-made",
+    "areaServed":["Germany","Europe"],
+    "image":"pexels-pixabay-46970.jpg",
+    "organizer":{"@type":"Organization","name":"Nice Tours and Events"},
+    "offers":{"@type":"Offer","url":"https://www.nicetoursandevents.com/booking.html","availability":"https://schema.org/InStock","priceCurrency":"EUR","price":"0","priceSpecification":{"@type":"PriceSpecification","price":"0","priceCurrency":"EUR","description":"On request"}}
+  }
+  </script>
+
+  <!-- Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --forest:#0F3C2E }
+    body{ font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial }
+    h1,h2,h3{ font-family:"Playfair Display", ui-serif, Georgia, serif }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 min-h-screen">
+  <!-- Header -->
+  <header class="bg-[color:var(--forest)] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap gap-3 items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo_transparent.png" alt="Nice Tours and Events logo" class="h-24 w-auto" width="240" height="96">
+        <span class="sr-only">Nice Tours and Events</span>
+      </a>
+
+      <nav class="flex flex-wrap items-center gap-4" aria-label="Primary">
+        <a href="index.html" class="hover:underline" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="hover:underline" data-i18n="nav.about">About</a>
+        <a href="tours.html" class="hover:underline font-semibold" data-i18n="nav.tours">Tours</a>
+        <a href="events.html" class="hover:underline" data-i18n="nav.events">Events</a>
+        <a href="mailto:nicetoursandevents@gmail.com" class="hover:underline" data-i18n="nav.contact">Contact</a>
+        <a href="booking.html" class="hover:underline" data-i18n="nav.booking">Booking</a>
+        <span class="opacity-70">|</span>
+        <button id="btn-en" class="hover:underline">EN</button>
+        <button id="btn-pt" class="hover:underline">PT</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Head -->
+  <div class="max-w-6xl mx-auto px-4 pt-10 text-center">
+    <div class="text-[color:var(--forest)] font-extrabold tracking-widest uppercase text-xs mb-2" data-i18n="eyebrow">Romantic Road</div>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-[color:var(--forest)]" data-i18n="h1">Romantic Road in Germany</h1>
+    <p class="text-gray-600 mt-2" data-i18n="subtitle">29 towns • 460 km • cobbled squares, towers & castles</p>
+  </div>
+
+  <!-- HERO (castelo horizontal grande) -->
+  <section class="max-w-5xl mx-auto px-4 pt-6">
+    <div class="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden border-4 border-[color:var(--forest)] shadow-xl">
+      <img src="pexels-pixabay-46970.jpg"
+           alt="Neuschwanstein Castle on Germany’s Romantic Road"
+           class="w-full h-56 sm:h-72 md:h-96 object-cover"
+           loading="lazy" decoding="async">
+    </div>
+
+    <!-- chips -->
+    <div class="mt-4 flex flex-wrap justify-center gap-2">
+      <span class="inline-flex items-center px-3 py-1 rounded-full border border-emerald-200 bg-emerald-50 text-emerald-900/90 text-xs font-semibold" data-i18n="chip.towns">29 towns</span>
+      <span class="inline-flex items-center px-3 py-1 rounded-full border border-emerald-200 bg-emerald-50 text-emerald-900/90 text-xs font-semibold" data-i18n="chip.length">460 km</span>
+      <span class="inline-flex items-center px-3 py-1 rounded-full border border-emerald-200 bg-emerald-50 text-emerald-900/90 text-xs font-semibold" data-i18n="chip.highlights">Rothenburg • Dinkelsbühl • Füssen</span>
+      <span class="inline-flex items-center px-3 py-1 rounded-full border border-emerald-200 bg-emerald-50 text-emerald-900/90 text-xs font-semibold" data-i18n="chip.castle">Neuschwanstein finale</span>
+    </div>
+  </section>
+
+  <!-- Conteúdo + foto da placa (sem áreas brancas) -->
+  <section class="max-w-5xl mx-auto px-4 pt-6">
+    <div class="bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,.10)] border border-black/5 p-6 sm:p-8 grid md:grid-cols-2 gap-6 md:gap-10 items-start">
+      <!-- Texto -->
+      <div class="order-2 md:order-1 text-lg leading-relaxed text-gray-700">
+        <h2 class="text-2xl font-extrabold text-[color:var(--forest)] mb-3" data-i18n="exp.t">Explore at your pace</h2>
+
+        <p class="mb-4" data-i18n="exp.d">
+          Germany’s Romantic Road (<em>Romantische Straße</em>) strings together storybook towns, medieval towers and scenic countryside from Würzburg to Füssen in the Bavarian Alps. We tailor the route to your time and interests—north to south or the other way around—with relaxed pacing, curated photo stops and moments for cafés and viewpoints.
+        </p>
+
+        <h3 class="text-xl font-extrabold text-[color:var(--forest)] mt-2" data-i18n="combo.t">Beautiful combinations</h3>
+        <p data-i18n="combo.d">
+          Pair it with the romantic <a href="castles-and-gardens.html" class="underline font-semibold">Castles &amp; Gardens</a> theme,
+          or add the <a href="half-timbered-tours.html" class="underline font-semibold">Half-Timbered Route</a> for classic façades and cobbled squares.
+        </p>
+      </div>
+
+      <!-- Placa (sem fundo branco, sem crop agressivo) -->
+      <div class="order-1 md:order-2">
+        <figure class="rounded-2xl overflow-hidden border-4 border-[color:var(--forest)] shadow-xl">
+          <img id="signImg" alt="Romantische Straße road sign" class="block w-full h-auto" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detalhes -->
+  <section class="max-w-5xl mx-auto px-4 pt-4">
+    <div class="bg-white rounded-2xl border border-black/5 p-6 sm:p-8">
+      <ul class="grid sm:grid-cols-2 gap-4 text-gray-700">
+        <li class="grid grid-cols-[auto,1fr] gap-x-3">
+          <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.length.t">Length:</span>
+          <span data-i18n="facts.length.d">460 km from Würzburg to Füssen.</span>
+        </li>
+        <li class="grid grid-cols-[auto,1fr] gap-x-3">
+          <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.towns.t">Towns:</span>
+          <span data-i18n="facts.towns.d">29 official towns including Rothenburg, Dinkelsbühl and Nördlingen.</span>
+        </li>
+        <li class="grid grid-cols-[auto,1fr] gap-x-3">
+          <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.season.t">Best season:</span>
+          <span data-i18n="facts.season.d">Spring for flower-filled meadows; autumn for golden roads and lively squares; winter for snow and the festive charm of village markets.</span>
+        </li>
+        <li class="grid grid-cols-[auto,1fr] gap-x-3">
+          <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.custom.t">Custom:</span>
+          <span data-i18n="facts.custom.d">Private, tailor-made itineraries to match your time and interests.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-5xl mx-auto px-4 py-8">
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="booking.html" class="inline-block bg-[color:var(--forest)] text-white px-5 py-2 rounded-lg font-bold shadow hover:brightness-95" data-i18n="cta.book">
+        Book your tour
+      </a>
+      <a href="tours.html" class="inline-block border-2 border-[color:var(--forest)] text-[color:var(--forest)] px-5 py-2 rounded-lg font-bold hover:bg-emerald-50" data-i18n="cta.all">
+        See all tours
+      </a>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="max-w-5xl mx-auto px-4 pb-12 grid sm:grid-cols-2 gap-4">
+    <a href="castles-and-gardens.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+      <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.castles.t">Castles &amp; Gardens</h3>
+      <p class="text-gray-600" data-i18n="card.castles.d">Palaces, landscaped gardens and scenic viewpoints.</p>
+    </a>
+    <a href="half-timbered-tours.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+      <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.timber.t">Half-Timbered Route</h3>
+      <p class="text-gray-600" data-i18n="card.timber.d">Classic façades, cobbled lanes and market squares.</p>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[color:var(--forest)] text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      &copy; 2025 Nice Tours and Events. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- I18N + sign fallback loader -->
+  <script>
+    const I18N = {
+      'en': {
+        'meta.title':'Romantic Road – Nice Tours and Events',
+        'meta.description':'Drive Germany’s Romantic Road (Romantische Straße): 29 towns over 460 km, from Würzburg to Füssen and Neuschwanstein. Tailor-made private tour.',
+        'og.title':'Romantic Road – Nice Tours and Events',
+        'og.description':'Storybook towns and scenic roads: 29 towns across 460 km. Finish in the Bavarian Alps by Neuschwanstein. Private, tailor-made itineraries.',
+        'tw.title':'Romantic Road – Nice Tours and Events',
+        'tw.description':'From Würzburg to Füssen: 29 towns, 460 km, castles and cobbled squares.',
+        'nav.home':'Home','nav.about':'About','nav.tours':'Tours','nav.events':'Events','nav.contact':'Contact','nav.booking':'Booking',
+        'eyebrow':'Romantic Road','h1':'Romantic Road in Germany',
+        'subtitle':'29 towns • 460 km • cobbled squares, towers & castles',
+        'exp.t':'Explore at your pace',
+        'exp.d':'Germany’s Romantic Road (Romantische Straße) strings together storybook towns, medieval towers and scenic countryside from Würzburg to Füssen in the Bavarian Alps. We tailor the route to your time and interests—north to south or the other way around—with relaxed pacing, curated photo stops and moments for cafés and viewpoints.',
+        'combo.t':'Beautiful combinations',
+        'combo.d':'Pair it with the romantic <a href="castles-and-gardens.html" class="underline font-semibold">Castles &amp; Gardens</a> theme, or add the <a href="half-timbered-tours.html" class="underline font-semibold">Half-Timbered Route</a> for classic façades and cobbled squares.',
+        'facts.length.t':'Length:','facts.length.d':'460 km from Würzburg to Füssen.',
+        'facts.towns.t':'Towns:','facts.towns.d':'29 official towns including Rothenburg, Dinkelsbühl and Nördlingen.',
+        'facts.season.t':'Best season:','facts.season.d':'Spring for flower-filled meadows; autumn for golden roads and lively squares; winter for snow and the festive charm of village markets.',
+        'facts.custom.t':'Custom:','facts.custom.d':'Private, tailor-made itineraries to match your time and interests.',
+        'cta.book':'Book your tour','cta.all':'See all tours',
+        'chip.towns':'29 towns','chip.length':'460 km','chip.highlights':'Rothenburg • Dinkelsbühl • Füssen','chip.castle':'Neuschwanstein finale',
+        'card.castles.t':'Castles & Gardens','card.castles.d':'Palaces, landscaped gardens and scenic viewpoints.',
+        'card.timber.t':'Half-Timbered Route','card.timber.d':'Classic façades, cobbled lanes and market squares.'
+      },
+      'pt-BR': {
+        'meta.title':'Rota Romântica – Nice Tours and Events',
+        'meta.description':'Faça a Rota Romântica da Alemanha (Romantische Straße): 29 cidades ao longo de 460 km, de Würzburg a Füssen e o castelo Neuschwanstein. Tour privado sob medida.',
+        'og.title':'Rota Romântica – Nice Tours and Events',
+        'og.description':'Cidades de conto e estradas cênicas: 29 cidades em 460 km. Final nos Alpes da Baviera, ao lado de Neuschwanstein. Itinerários privados e personalizados.',
+        'tw.title':'Rota Romântica – Nice Tours and Events',
+        'tw.description':'De Würzburg a Füssen: 29 cidades, 460 km, torres medievais, praças de pedra e castelos.',
+        'nav.home':'Início','nav.about':'Sobre','nav.tours':'Passeios','nav.events':'Eventos','nav.contact':'Contato','nav.booking':'Reservas',
+        'eyebrow':'Rota Romântica','h1':'Rota Romântica na Alemanha',
+        'subtitle':'29 cidades • 460 km • praças de pedra, torres e castelos',
+        'exp.t':'Explore no seu ritmo',
+        'exp.d':'A Rota Romântica (<em>Romantische Straße</em>) conecta cidades de conto, torres medievais e paisagens cênicas de Würzburg a Füssen, nos Alpes da Baviera. Ajustamos o roteiro ao seu tempo e interesses — no sentido norte-sul ou inverso — com ritmo tranquilo, paradas fotográficas e momentos para cafés e mirantes.',
+        'combo.t':'Combinações bonitas',
+        'combo.d':'Combine com o tema <a href="castles-and-gardens.html" class="underline font-semibold">Castelos & Jardins</a> ou acrescente a <a href="half-timbered-tours.html" class="underline font-semibold">Rota do Enxaimel</a> para fachadas clássicas e praças históricas.',
+        'facts.length.t':'Extensão:','facts.length.d':'460 km, de Würzburg a Füssen.',
+        'facts.towns.t':'Cidades:','facts.towns.d':'29 cidades oficiais, incluindo Rothenburg, Dinkelsbühl e Nördlingen.',
+        'facts.season.t':'Melhor época:','facts.season.d':'Primavera, com campos floridos; outono, pela beleza das estradas e praças; inverno, pela neve e o clima festivo dos vilarejos.',
+        'facts.custom.t':'Sob medida:','facts.custom.d':'Roteiros privados e personalizados conforme seu tempo e interesses.',
+        'cta.book':'Reserve seu tour','cta.all':'Todos os tours',
+        'chip.towns':'29 cidades','chip.length':'460 km','chip.highlights':'Rothenburg • Dinkelsbühl • Füssen','chip.castle':'Final em Neuschwanstein',
+        'card.castles.t':'Castelos & Jardins','card.castles.d':'Palácios, jardins planejados e mirantes cênicos.',
+        'card.timber.t':'Rota do Enxaimel','card.timber.d':'Fachadas enxaimel, ruas de pedra e praças históricas.'
+      }
+    };
+
+    function setMeta(sel,val){const el=document.querySelector(sel); if(el&&val) el.setAttribute('content',val)}
+    function applyLang(lang){
+      const d=I18N[lang]||I18N.en;
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const k=el.getAttribute('data-i18n');
+        if(d[k]!==undefined){
+          if(k==='combo.d' || k==='exp.d') el.innerHTML=d[k]; else el.textContent=d[k];
+        }
+      });
+      document.title=d['meta.title']||document.title;
+      setMeta('meta[name="description"]',d['meta.description']);
+      setMeta('meta[property="og:title"]',d['og.title']);
+      setMeta('meta[property="og:description"]',d['og.description']);
+      setMeta('meta[name="twitter:title"]',d['tw.title']);
+      setMeta('meta[name="twitter:description"]',d['tw.description']);
+      document.documentElement.lang=lang;
+      try{localStorage.setItem('lang',lang)}catch(e){}
+    }
+    document.getElementById('btn-en').addEventListener('click',()=>applyLang('en'));
+    document.getElementById('btn-pt').addEventListener('click',()=>applyLang('pt-BR'));
+    applyLang((()=>{try{return localStorage.getItem('lang')}catch(e){return null}})()||'en');
+
+    // Carrega a foto da placa tentando nomes comuns (sem “barras brancas” porque a imagem usa altura natural)
+    (function(){
+      const img=document.getElementById('signImg');
+      const candidates=[
+        'romantische-strasse.jpg',
+        'romantische strasse.jpg',
+        'romantische-strasse-sign.jpg',
+        'romantic-road-sign.jpg',
+        'romantische_strasse.jpg'
+      ];
+      let i=0;
+      function next(){ if(i<candidates.length){ img.src=candidates[i++]; } else { img.alt='Sign image not available'; } }
+      img.onerror=next; next();
+    })();
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="index,follow">
+  <title>Tours in Ireland – Nice Tours and Events</title>
+
+  <!-- SEO -->
+  <link rel="canonical" href="./tours-ireland.html">
+  <meta name="description" content="Private, tailor-made tours in Ireland: Wild Atlantic Way, Causeway Coast, castles and cozy pubs. Video inspiration and curated photo stops.">
+  <meta name="author" content="Nice Tours and Events">
+
+  <!-- OG/Twitter -->
+  <meta property="og:title" content="Tours in Ireland – Nice Tours and Events">
+  <meta property="og:description" content="Wild Atlantic Way & Causeway Coast with castles, cliffs and cozy pubs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./tours-ireland.html">
+  <meta property="og:image" content="ireland-coast-drink.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tours in Ireland – Nice Tours and Events">
+  <meta name="twitter:description" content="Curated Ireland itineraries: scenic coasts, villages and pubs.">
+  <meta name="twitter:image" content="ireland-coast-drink.jpg">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristTrip",
+    "name":"Private Tours in Ireland",
+    "description":"Tailor-made tours across Ireland including the Wild Atlantic Way and the Causeway Coast, with scenic villages, castles and cozy pubs.",
+    "touristType":"Private tailor-made",
+    "areaServed":["Ireland","United Kingdom","Europe"],
+    "image":"ireland-coast-drink.jpg",
+    "organizer":{"@type":"Organization","name":"Nice Tours and Events"},
+    "offers":{"@type":"Offer","url":"https://www.nicetoursandevents.com/booking.html","availability":"https://schema.org/InStock","priceCurrency":"EUR","price":"0","priceSpecification":{"@type":"PriceSpecification","price":"0","priceCurrency":"EUR","description":"On request"}}
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{ --forest:#0F3C2E }
+    body{ font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial }
+
+    /* --- Marca d’água discreta nos figures que tiverem .wm --- */
+    figure.wm{ position:relative }
+    figure.wm::after{
+      content:"Nice Tours and Events";
+      position:absolute; right:.6rem; bottom:.55rem;
+      font-size:.8rem; line-height:1; letter-spacing:.02em;
+      color:rgba(255,255,255,.95);
+      text-shadow:0 2px 6px rgba(0,0,0,.45);
+      background:rgba(0,0,0,.22);
+      padding:.4rem .6rem; border-radius:.5rem;
+      pointer-events:none; user-select:none;
+    }
+    @media (min-width:768px){
+      figure.wm::after{ font-size:.9rem; padding:.45rem .7rem }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-[color:var(--forest)] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap gap-3 items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo_transparent.png" alt="Nice Tours and Events logo" class="h-24 w-auto" width="240" height="96">
+        <span class="sr-only">Nice Tours and Events</span>
+      </a>
+
+      <nav class="flex flex-wrap items-center gap-4" aria-label="Primary">
+        <a href="index.html" class="hover:underline" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="hover:underline" data-i18n="nav.about">About</a>
+        <a href="tours.html" class="hover:underline font-semibold" data-i18n="nav.tours">Tours</a>
+        <a href="events.html" class="hover:underline" data-i18n="nav.events">Events</a>
+        <a href="mailto:nicetoursandevents@gmail.com" class="hover:underline" data-i18n="nav.contact">Contact</a>
+        <a href="booking.html" class="hover:underline" data-i18n="nav.booking">Booking</a>
+        <span class="opacity-70">|</span>
+        <button id="btn-en" class="hover:underline">EN</button>
+        <button id="btn-pt" class="hover:underline">PT</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Head -->
+  <div class="max-w-6xl mx-auto px-4 pt-10 text-center">
+    <div class="text-[color:var(--forest)] font-extrabold tracking-widest uppercase text-xs mb-2" data-i18n="eyebrow">Ireland Tours</div>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-[color:var(--forest)]" data-i18n="h1">Private Tours in Ireland</h1>
+    <p class="text-gray-600 mt-2" data-i18n="subtitle">Wild Atlantic Way • Causeway Coast • castles & pubs</p>
+  </div>
+
+  <!-- Intro + Video -->
+  <section class="max-w-6xl mx-auto px-4 pt-6">
+    <div class="bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,.10)] border border-black/5 p-6 sm:p-8 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+      <div class="order-2 md:order-1 text-lg leading-relaxed text-gray-700">
+        <p class="mb-4" data-i18n="p1">
+          Ireland blends rugged coasts, green valleys and legendary hospitality. Explore colorful villages and scenic drives, stop at historic castles and share a pint in cozy pubs.
+        </p>
+        <p data-i18n="p2">
+          From the Wild Atlantic Way in the west to the dramatic Causeway Coast in the north—home to the Giant’s Causeway—we shape a relaxed, tailor-made route matching your time and interests.
+        </p>
+
+        <ul class="mt-5 grid sm:grid-cols-2 gap-3 text-sm">
+          <li class="px-3 py-2 rounded-lg border border-emerald-200 bg-emerald-50 text-emerald-900" data-i18n="chip.waw">Wild Atlantic Way</li>
+          <li class="px-3 py-2 rounded-lg border border-emerald-200 bg-emerald-50 text-emerald-900" data-i18n="chip.causeway">Causeway Coast & Giant’s Causeway</li>
+          <li class="px-3 py-2 rounded-lg border border-emerald-200 bg-emerald-50 text-emerald-900" data-i18n="chip.castles">Castles, abbeys & Celtic crosses</li>
+          <li class="px-3 py-2 rounded-lg border border-emerald-200 bg-emerald-50 text-emerald-900" data-i18n="chip.pubs">Villages, live music & cozy pubs</li>
+        </ul>
+      </div>
+
+      <div class="order-1 md:order-2">
+        <div class="w-full aspect-video rounded-2xl overflow-hidden border-4 border-[color:var(--forest)] shadow-xl">
+          <iframe
+            class="w-full h-full"
+            src="https://www.youtube-nocookie.com/embed/Uv_UxL__fr4?rel=0&modestbranding=1"
+            title="Tours in Ireland"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foto da cidra > texto > CTAs -->
+  <section class="max-w-6xl mx-auto px-4 pt-6">
+    <div class="bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,.10)] border border-black/5 p-6 sm:p-8 grid md:grid-cols-2 gap-6 md:gap-10 items-start">
+      <!-- ESQ: FOTO primeiro, TEXTO depois -->
+      <div class="flex flex-col gap-4">
+        <figure class="rounded-xl overflow-hidden border-2 border-[color:var(--forest)]/60 shadow bg-white wm">
+          <img id="g3" alt="Sunny seaside toast on the Irish coast"
+               class="w-full h-56 sm:h-60 object-cover object-bottom" loading="lazy" decoding="async">
+        </figure>
+
+        <div class="text-lg leading-relaxed text-gray-700">
+          <h2 class="text-2xl font-extrabold text-[color:var(--forest)] mb-3" data-i18n="cross.t">Celtic symbols & stories</h2>
+          <p data-i18n="cross.d">
+            Ancient monasteries and high crosses dot the Irish landscape. Add a gentle stop to learn about the Celtic knotwork and early Christian art—perfect for photos and a deeper connection with the place.
+          </p>
+        </div>
+
+        <div class="mt-1 flex flex-wrap gap-3">
+          <a href="booking.html" class="inline-block bg-[color:var(--forest)] text-white px-5 py-2 rounded-lg font-bold shadow hover:brightness-95" data-i18n="cta.book">
+            Book your tour
+          </a>
+          <a href="tours.html" class="inline-block border-2 border-[color:var(--forest)] text-[color:var(--forest)] px-5 py-2 rounded-lg font-bold hover:bg-emerald-50" data-i18n="cta.all">
+            See all tours
+          </a>
+        </div>
+      </div>
+
+      <!-- DIR: CRUZ -->
+      <figure class="rounded-2xl overflow-hidden border-4 border-[color:var(--forest)] shadow-xl bg-white h-96 sm:h-[540px] lg:h-[600px] wm">
+        <img id="g1" alt="Celtic high cross in a museum"
+             class="w-full h-full object-cover object-center"
+             loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Faixa larga: estrada/cottage -->
+  <section class="max-w-6xl mx-auto px-4 py-8">
+    <figure class="rounded-2xl overflow-hidden shadow border border-black/10 wm">
+      <img id="g2" alt="Lonely cottage by a bog road in Donegal"
+           class="w-full h-64 sm:h-80 object-cover" loading="lazy" decoding="async">
+    </figure>
+  </section>
+
+  <!-- Related -->
+  <section class="max-w-6xl mx-auto px-4 pb-12 grid sm:grid-cols-2 gap-4">
+    <a href="castles-and-gardens.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+      <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.castles.t">Castles &amp; Gardens</h3>
+      <p class="text-gray-600" data-i18n="card.castles.d">Palaces, formal gardens and scenic viewpoints.</p>
+    </a>
+    <a href="wine-tour-germany.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+      <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.wine.t">Wine Tours in Germany</h3>
+      <p class="text-gray-600" data-i18n="card.wine.d">Moselle Valley, Rhine and the German Wine Route with curated tastings.</p>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[color:var(--forest)] text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      &copy; 2025 Nice Tours and Events. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- I18N + image fallbacks -->
+  <script>
+    const I18N = {
+      'en': {
+        'meta.title':'Tours in Ireland – Nice Tours and Events',
+        'meta.description':'Private, tailor-made tours in Ireland: Wild Atlantic Way, Causeway Coast, castles and cozy pubs. Video inspiration and curated photo stops.',
+        'og.title':'Tours in Ireland – Nice Tours and Events',
+        'og.description':'Wild Atlantic Way & Causeway Coast with castles, cliffs and cozy pubs.',
+        'tw.title':'Tours in Ireland – Nice Tours and Events',
+        'tw.description':'Curated Ireland itineraries: scenic coasts, villages and pubs.',
+        'nav.home':'Home','nav.about':'About','nav.tours':'Tours','nav.events':'Events','nav.contact':'Contact','nav.booking':'Booking',
+        'eyebrow':'Ireland Tours','h1':'Private Tours in Ireland','subtitle':'Wild Atlantic Way • Causeway Coast • castles & pubs',
+        'p1':'Ireland blends rugged coasts, green valleys and legendary hospitality. Explore colorful villages and scenic drives, stop at historic castles and share a pint in cozy pubs.',
+        'p2':'From the Wild Atlantic Way in the west to the dramatic Causeway Coast in the north—home to the Giant’s Causeway—we shape a relaxed, tailor-made route matching your time and interests.',
+        'chip.waw':'Wild Atlantic Way','chip.causeway':'Causeway Coast & Giant’s Causeway',
+        'chip.castles':'Castles, abbeys & Celtic crosses','chip.pubs':'Villages, live music & cozy pubs',
+        'cross.t':'Celtic symbols & stories',
+        'cross.d':'Ancient monasteries and high crosses dot the Irish landscape. Add a gentle stop to learn about the Celtic knotwork and early Christian art—perfect for photos and a deeper connection with the place.',
+        'cta.book':'Book your tour','cta.all':'See all tours',
+        'card.castles.t':'Castles & Gardens','card.castles.d':'Palaces, formal gardens and scenic viewpoints.',
+        'card.wine.t':'Wine Tours in Germany',
+        'card.wine.d':'Moselle Valley, Rhine and the German Wine Route with curated tastings.'
+      },
+      'pt-BR': {
+        'meta.title':'Passeios na Irlanda – Nice Tours and Events',
+        'meta.description':'Passeios privados sob medida na Irlanda: Wild Atlantic Way, Costa da Calçada (Causeway Coast), castelos e pubs aconchegantes. Vídeo e paradas fotográficas curadas.',
+        'og.title':'Passeios na Irlanda – Nice Tours and Events',
+        'og.description':'Wild Atlantic Way e Causeway Coast com castelos, falésias e pubs acolhedores.',
+        'tw.title':'Passeios na Irlanda – Nice Tours and Events',
+        'tw.description':'Roteiros curados pela Irlanda: costas cênicas, vilarejos e pubs.',
+        'nav.home':'Início','nav.about':'Sobre','nav.tours':'Passeios','nav.events':'Eventos','nav.contact':'Contato','nav.booking':'Reservas',
+        'eyebrow':'Passeios na Irlanda','h1':'Passeios Privados na Irlanda',
+        'subtitle':'Wild Atlantic Way • Causeway Coast • castelos e pubs',
+        'p1':'A Irlanda combina costas selvagens, vales verdes e hospitalidade lendária. Explore vilarejos coloridos e estradas cênicas, visite castelos históricos e brinde em pubs acolhedores.',
+        'p2':'Do Wild Atlantic Way no oeste à dramática Causeway Coast no norte — lar da Calçada dos Gigantes — montamos um roteiro tranquilo e sob medida para o seu tempo e interesses.',
+        'chip.waw':'Wild Atlantic Way','chip.causeway':'Causeway Coast & Calçada dos Gigantes',
+        'chip.castles':'Castelos, abadias e cruzes celtas','chip.pubs':'Vilarejos, música ao vivo e pubs',
+        'cross.t':'Símbolos celtas & histórias',
+        'cross.d':'Mosteiros antigos e cruzes altas pontilham a paisagem irlandesa. Inclua uma parada suave para conhecer os entrelaços celtas e a arte cristã primitiva — perfeita para fotos e para se conectar ao lugar.',
+        'cta.book':'Reserve seu tour','cta.all':'Todos os tours',
+        'card.castles.t':'Castelos & Jardins','card.castles.d':'Palácios, jardins planejados e mirantes cênicos.',
+        'card.wine.t':'Tours de Vinho na Alemanha',
+        'card.wine.d':'Vale do Mosela, Reno e a Rota do Vinho Alemão, com degustações curadas.'
+      }
+    };
+
+    function setMeta(sel,val){const el=document.querySelector(sel); if(el&&val) el.setAttribute('content',val)}
+    function applyLang(lang){
+      const d=I18N[lang]||I18N.en;
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const k=el.getAttribute('data-i18n');
+        if(d[k]!==undefined){ el.innerHTML=d[k]; }
+      });
+      document.title=d['meta.title']||document.title;
+      setMeta('meta[name="description"]',d['meta.description']);
+      setMeta('meta[property="og:title"]',d['og.title']);
+      setMeta('meta[property="og:description"]',d['og.description']);
+      setMeta('meta[name="twitter:title"]',d['tw.title']);
+      setMeta('meta[name="twitter:description"]',d['tw.description']);
+      document.documentElement.lang=lang;
+      try{localStorage.setItem('lang',lang)}catch(e){}
+    }
+    document.getElementById('btn-en').addEventListener('click',()=>applyLang('en'));
+    document.getElementById('btn-pt').addEventListener('click',()=>applyLang('pt-BR'));
+    applyLang((()=>{try{return localStorage.getItem('lang')}catch(e){return null}})()||'en');
+
+    /* ======== Image fallbacks ======== */
+    function trySources(img, list){let i=0; function next(){ if(i<list.length){ img.src=list[i++]; } } img.onerror=next; next();}
+    trySources(document.getElementById('g1'),[
+      'ireland-high-cross.jpg','ireland high cross.jpg','irish-high-cross.jpg','high-cross-derry.jpg','celtic-cross.jpg'
+    ]);
+    trySources(document.getElementById('g2'),[
+      'ireland-bog-road.jpg','donegal-bog-road.jpg','bog-road.jpg','donegal-road.jpg','ireland-bog-road-2.jpg'
+    ]);
+    trySources(document.getElementById('g3'),[
+      'ireland-coast-drink.jpg','ireland coast drink.jpg','irish-coast-toast.jpg','coast-celebration.jpg'
+    ]);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>All Tours – Nice Tours and Events</title>
+
+  <!-- SEO -->
+  <link rel="canonical" href="./tours.html">
+  <meta name="description" content="Hand-picked tours across Europe. Castles & Gardens, German Wine Tours, Half-timbered towns, Romantic Rhine, Fairytale Route, Romantic Road, Flower Tours, Ireland and Brazil — all tailor-made.">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="All Tours – Nice Tours and Events">
+  <meta property="og:description" content="10 curated tours tailored to your style and timing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./tours.html">
+  <meta property="og:image" content="tour-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="All Tours – Nice Tours and Events">
+  <meta name="twitter:description" content="10 curated tours tailored to your style and timing.">
+  <meta name="twitter:image" content="tour-hero.jpg">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Nice Tours and Events – All Tours",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Castles and Gardens Tours","url":"castles-and-gardens.html"},
+      {"@type":"ListItem","position":2,"name":"Wine Tours in Germany","url":"wine-tour-germany.html"},
+      {"@type":"ListItem","position":3,"name":"Half-timbered Tours","url":"half-timbered-tours.html"},
+      {"@type":"ListItem","position":4,"name":"Romantic Rhine","url":"romantic-rhine.html"},
+      {"@type":"ListItem","position":5,"name":"Fairytale Route","url":"fairytale-route.html"},
+      {"@type":"ListItem","position":6,"name":"Romantic Road","url":"romantic-road.html"},
+      {"@type":"ListItem","position":7,"name":"Flower Tours","url":"flower-tours.html"},
+      {"@type":"ListItem","position":8,"name":"Tours in Ireland","url":"tours-ireland.html"},
+      {"@type":"ListItem","position":9,"name":"Tours in Brazil","url":"tours-in-brazil.html"},
+      {"@type":"ListItem","position":10,"name":"City Tour Düsseldorf","url":"city-tour-dusseldorf.html"}
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --forest:#0F3C2E; --forest2:#093C2B; --gold:#F1D06F;
+      --ink:#1f2937; --muted:#6b7280; --bg:#f7faf9; --card:#fff; --ring:rgba(15,60,46,.10);
+      --logo-h:92px;
+    }
+    *{box-sizing:border-box} html,body{margin:0}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif; color:var(--ink);
+      background:
+        radial-gradient(1200px 800px at 10% -10%, #dfeee9 0, transparent 60%),
+        radial-gradient(1200px 800px at 110% 10%, #eaf5f1 0, transparent 60%),
+        var(--bg);
+    }
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    /* Header */
+    header{background:linear-gradient(180deg,var(--forest2),var(--forest));color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 6px 22px rgba(0,0,0,.25)}
+    .topbar{display:flex;align-items:center;gap:16px;min-height:96px}
+    .brand img{height:var(--logo-h);width:auto;display:block}
+    nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin-left:auto}
+    nav a, nav button{color:#fff;text-decoration:none;padding:8px 0;background:none;border:0;cursor:pointer;font:inherit}
+    nav a:hover, nav button:hover{text-decoration:underline}
+    nav a[aria-current="page"]{text-decoration:underline;font-weight:700}
+
+    /* Dropdown Contact */
+    .dropdown{position:relative}
+    .dropdown-menu{
+      position:absolute; right:0; top:130%; min-width:240px;
+      background:#fff; color:#111; border:1px solid rgba(0,0,0,.08);
+      border-radius:10px; box-shadow:0 16px 40px rgba(0,0,0,.18);
+      padding:8px; z-index:50;
+      display:block; opacity:0; transform:translateY(6px); pointer-events:none;
+      transition:opacity .18s ease, transform .18s ease;
+    }
+    .dropdown-menu a{
+      color:var(--forest) !important;
+      text-decoration:none !important;
+      display:flex; align-items:center; gap:8px;
+      padding:8px 10px; border-radius:8px; font-weight:700;
+    }
+    .dropdown-menu a:hover{ background:#eef6f3 }
+    .dropdown[aria-expanded="true"] .dropdown-menu{
+      opacity:1; transform:translateY(0); pointer-events:auto;
+    }
+
+    /* Page head */
+    .page-head{text-align:center;padding:56px 0 12px}
+    .eyebrow{color:var(--gold);font-weight:800;letter-spacing:.14em;font-size:12px;text-transform:uppercase}
+    h1{margin:.35rem 0 6px;font-size:36px;color:var(--forest)}
+    .muted{color:var(--muted);font-size:16px}
+
+    /* Intro card */
+    .card{background:var(--card);border-radius:18px;box-shadow:0 25px 60px var(--ring);padding:28px;margin-top:18px}
+    .intro{display:grid;grid-template-columns:1fr;gap:28px;align-items:center}
+    @media(min-width:900px){.intro{grid-template-columns:1.2fr 1fr}}
+    .photo{
+      max-width:560px;width:100%;height:auto;
+      border:0; border-radius:16px; box-shadow:none;
+      opacity:0.8; /* mais em background */
+    }
+    .lead{font-size:18px;line-height:1.7}
+
+    /* Lista de tours */
+    .list{background:var(--card);border-radius:18px;box-shadow:0 25px 60px var(--ring);padding:22px;margin-top:18px}
+    ol{margin:0;padding-left:22px}
+    .tour-link{display:block;padding:10px 12px;border-radius:12px;text-decoration:none;color:var(--forest);font-weight:800}
+    .tour-link:hover{background:#eef6f3}
+
+    /* CTA */
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+    .btn{display:inline-block;text-decoration:none;padding:12px 18px;border-radius:12px;font-weight:900;letter-spacing:.2px;box-shadow:0 10px 26px rgba(0,0,0,.15)}
+    .btn-primary{background:var(--forest);color:#fff}
+    .btn-outline{border:2px solid var(--forest);color:var(--forest);background:#fff}
+
+    footer{margin:56px 0 0;padding:18px 0;text-align:center;color:#fff;background:var(--forest)}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container topbar">
+    <a class="brand" href="index.html"><img src="logo_transparent.png" alt="Nice Tours and Events logo" loading="eager" decoding="async"></a>
+    <nav aria-label="Primary">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="tours.html" aria-current="page" data-i18n="nav.tours">Tours</a>
+      <a href="events.html" data-i18n="nav.events">Events</a>
+
+      <div class="dropdown" id="contactDrop" aria-expanded="false">
+        <button type="button" aria-haspopup="true" aria-controls="contactMenu"
+                onclick="toggleDrop('contactDrop')" data-i18n="nav.contact">Contact ▾</button>
+        <div class="dropdown-menu" id="contactMenu" role="menu">
+          <a href="mailto:nicetoursandevents@gmail.com" role="menuitem">
+            <span aria-hidden="true">📧</span>
+            <span>nicetoursandevents@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="booking.html" data-i18n="nav.booking">Booking</a>
+
+      <!-- EN/PT -->
+      <div class="lang" aria-label="Language switcher" style="margin-left:8px;display:flex;gap:8px;font-weight:600;">
+        <button id="btn-en" aria-current="true" style="color:#fff;background:transparent;border:none;cursor:pointer">EN</button> |
+        <button id="btn-pt" style="color:#fff;background:transparent;border:none;cursor:pointer">PT</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="container page-head">
+  <div class="eyebrow" data-i18n="eyebrow">BESPOKE &amp; CURATED</div>
+  <h1 data-i18n="title">All Tours</h1>
+  <div class="muted" data-i18n="subtitle">Hand-picked experiences across Europe</div>
+</div>
+
+<main class="container">
+
+  <!-- Intro + foto -->
+  <section class="card intro">
+    <img
+      class="photo"
+      id="toursHero"
+      src=""
+      alt="European tour scenery"
+      loading="lazy" decoding="async">
+    <div class="lead" data-i18n="lead">
+      We offer tailor-made tours for you, your family and friends, turning your trip into an unforgettable experience.
+      Whether in Germany, Ireland or Brazil, we create personal itineraries focused on your interests and book hotels
+      with all the flexibility to make your dream trip a reality.
+    </div>
+    <div class="cta">
+      <a class="btn btn-primary" href="booking.html" data-i18n="cta.book">Book your tour</a>
+      <a class="btn btn-outline" href="mailto:nicetoursandevents@gmail.com" data-i18n="cta.contact">Contact</a>
+    </div>
+  </section>
+
+  <!-- Lista de 10 tours -->
+  <section class="list">
+    <ol>
+      <li><a class="tour-link" href="castles-and-gardens.html" data-i18n="l1">Castles and Gardens Tours</a></li>
+      <li><a class="tour-link" href="wine-tour-germany.html" data-i18n="l2">Wine Tours in Germany</a></li>
+      <li><a class="tour-link" href="half-timbered-tours.html" data-i18n="l3">Half-timbered Tours</a></li>
+      <li><a class="tour-link" href="romantic-rhine.html" data-i18n="l4">Romantic Rhine</a></li>
+      <li><a class="tour-link" href="fairytale-route.html" data-i18n="l5">Fairytale Route</a></li>
+      <li><a class="tour-link" href="romantic-road.html" data-i18n="l6">Romantic Road</a></li>
+      <li><a class="tour-link" href="flower-tours.html" data-i18n="l7">Flower Tours</a></li>
+      <li><a class="tour-link" href="tours-ireland.html" data-i18n="l8">Tours in Ireland</a></li>
+      <li><a class="tour-link" href="tours-in-brazil.html" data-i18n="l9">Tours in Brazil</a></li>
+      <li><a class="tour-link" href="city-tour-dusseldorf.html" data-i18n="l10">City Tour Düsseldorf</a></li>
+    </ol>
+  </section>
+
+</main>
+
+<footer>© 2025 Nice Tours and Events. All rights reserved.</footer>
+
+<script>
+  // Abre/fecha dropdown
+  function toggleDrop(id){
+    const el = document.getElementById(id);
+    el.setAttribute('aria-expanded', el.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+  }
+  document.addEventListener('click', (e)=>{ const d = document.getElementById('contactDrop'); if(d && !d.contains(e.target)) d.setAttribute('aria-expanded','false'); });
+
+  // Hero loader robusto: escolhe o 1º caminho que realmente carrega
+  (function () {
+    const el = document.getElementById('toursHero');
+    const candidates = [
+      'tour-hero.jpg',
+      'images/tours/tour-hero.jpg',
+      'images/tours/tour-hero.JPG',
+      'images/tours/tour-hero.jpeg',
+      'images/tour-hero.jpg',
+      'Capa.jpg'
+    ];
+    let i = 0;
+
+    function tryNext(){
+      if(i >= candidates.length){ el.removeAttribute('src'); return; }
+      const test = new Image();
+      const src = candidates[i++];
+      test.onload = function(){ el.src = src; };
+      test.onerror = tryNext;
+      test.src = src;
+    }
+    tryNext();
+  })();
+
+  // I18N EN / PT
+  const I18N = {
+    'en': {
+      'meta.title':'All Tours – Nice Tours and Events',
+      'meta.description':'Hand-picked tours across Europe. Castles & Gardens, German Wine Tours, Half-timbered towns, Romantic Rhine, Fairytale Route, Romantic Road, Flower Tours, Ireland and Brazil — all tailor-made.',
+      'og.title':'All Tours – Nice Tours and Events',
+      'og.description':'10 curated tours tailored to your style and timing.',
+      'tw.title':'All Tours – Nice Tours and Events',
+      'tw.description':'10 curated tours tailored to your style and timing.',
+      'nav.home':'Home','nav.about':'About','nav.tours':'Tours','nav.events':'Events','nav.contact':'Contact ▾','nav.booking':'Booking',
+      'eyebrow':'BESPOKE & CURATED',
+      'title':'All Tours',
+      'subtitle':'Hand-picked experiences across Europe',
+      'lead':'We offer tailor-made tours for you, your family and friends, turning your trip into an unforgettable experience. Whether in Germany, Ireland or Brazil, we create personal itineraries focused on your interests and book hotels with all the flexibility to make your dream trip a reality.',
+      'cta.book':'Book your tour','cta.contact':'Contact',
+      'l1':'Castles and Gardens Tours','l2':'Wine Tours in Germany','l3':'Half-timbered Tours','l4':'Romantic Rhine','l5':'Fairytale Route','l6':'Romantic Road','l7':'Flower Tours','l8':'Tours in Ireland','l9':'Tours in Brazil','l10':'City Tour Düsseldorf'
+    },
+    'pt-BR': {
+      'meta.title':'Todos os Passeios – Nice Tours and Events',
+      'meta.description':'Passeios selecionados na Europa. Castelos & Jardins, Rota do Vinho Alemão, vilas enxaimel, Reno Romântico, Rota dos Contos de Fadas, Rota Romântica, Tours de Flores, Irlanda e Brasil — tudo sob medida.',
+      'og.title':'Todos os Passeios – Nice Tours and Events',
+      'og.description':'10 roteiros curados conforme seu estilo e tempo.',
+      'tw.title':'Todos os Passeios – Nice Tours and Events',
+      'tw.description':'10 roteiros curados conforme seu estilo e tempo.',
+      'nav.home':'Início','nav.about':'Sobre','nav.tours':'Passeios','nav.events':'Eventos','nav.contact':'Contato ▾','nav.booking':'Reservas',
+      'eyebrow':'CURADORIA EXCLUSIVA',
+      'title':'Todos os Passeios',
+      'subtitle':'Experiências selecionadas pela Europa',
+      'lead':'Oferecemos passeios sob medida para você, sua família e amigos, transformando a viagem em uma experiência inesquecível. Seja na Alemanha, Irlanda ou Brasil, criamos roteiros personalizados focados nos seus interesses e reservamos hotéis com toda a flexibilidade para realizar a sua viagem dos sonhos.',
+      'cta.book':'Reservar seu passeio','cta.contact':'Contato',
+      'l1':'Castelos & Jardins','l2':'Rota do Vinho Alemão','l3':'Rota do Enxaimel','l4':'Reno Romântico','l5':'Rota dos Contos de Fadas','l6':'Rota Romântica','l7':'Tours de Flores','l8':'Passeios na Irlanda','l9':'Passeios no Brasil','l10':'City Tour em Düsseldorf'
+    }
+  };
+
+  function setMeta(selector, value){
+    const el = document.querySelector(selector);
+    if(el && value) el.setAttribute('content', value);
+  }
+
+  // aplica idioma (mantido do seu padrão)
+  const els = document.querySelectorAll('[data-i18n]');
+  function applyLang(lang){
+    const d = I18N[lang] || I18N['en'];
+    els.forEach(el=>{
+      const k = el.getAttribute('data-i18n');
+      if(d[k] !== undefined) el.textContent = d[k];
+    });
+    document.title = d['meta.title'] || document.title;
+    setMeta('meta[name="description"]', d['meta.description']);
+    setMeta('meta[property="og:title"]', d['og.title']);
+    setMeta('meta[property="og:description"]', d['og.description']);
+    setMeta('meta[name="twitter:title"]', d['tw.title']);
+    setMeta('meta[name="twitter:description"]', d['tw.description']);
+    document.documentElement.setAttribute('lang', lang);
+    try{ localStorage.setItem('lang', lang);}catch(e){}
+  }
+
+  // listeners explícitos nos botões (garante clique)
+  const btnEn = document.getElementById('btn-en');
+  const btnPt = document.getElementById('btn-pt');
+  if(btnEn) btnEn.addEventListener('click', ()=>applyLang('en'));
+  if(btnPt) btnPt.addEventListener('click', ()=>applyLang('pt-BR'));
+
+  // também mantém o handler global (compatível com outras páginas)
+  document.addEventListener('click', (e)=>{
+    if(e.target && e.target.id === 'btn-en') applyLang('en');
+    if(e.target && e.target.id === 'btn-pt') applyLang('pt-BR');
+  });
+
+  const saved = (()=>{try{return localStorage.getItem('lang')}catch(e){return null}})();
+  const browserLang = (navigator.language || 'en').toLowerCase().startsWith('pt') ? 'pt-BR' : 'en';
+  applyLang(saved || browserLang);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

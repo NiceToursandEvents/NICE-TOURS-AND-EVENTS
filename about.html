@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About – Nice Tours and Events</title>
+
+  <!-- SEO -->
+  <link rel="canonical" href="./about.html">
+  <meta name="description" content="Meet Eunice Haake — Teacher, Event Planner & Certified Tour Guide. Personalized European tours and elegant events from Düsseldorf.">
+  <meta property="og:title" content="About – Nice Tours and Events">
+  <meta property="og:description" content="Teacher, Event Planner & Certified Tour Guide based in Düsseldorf — designing tasteful tours and events across Europe.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./about.html">
+  <meta property="og:image" content="bruges9.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About – Nice Tours and Events">
+  <meta name="twitter:description" content="Teacher, Event Planner & Certified Tour Guide in Düsseldorf.">
+  <meta name="twitter:image" content="bruges9.png">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Nice Tours and Events",
+    "url":"https://www.nicetoursandevents.com/",
+    "logo":"https://www.nicetoursandevents.com/logo_transparent.png",
+    "sameAs":[
+      "https://www.youtube.com/@nicetoursandevents",
+      "https://www.instagram.com/nice_tours_and_events",
+      "https://www.linkedin.com/company/108294587"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --forest:#0F3C2E;--forest2:#093C2B;--ink:#1f2937;--muted:#6b7280;--bg:#f7faf9;--card:#fff;--ring:rgba(15,60,46,.10);
+      --logo-h:92px;
+    }
+    *{box-sizing:border-box} html,body{margin:0}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;color:var(--ink);
+      background:radial-gradient(1200px 800px at 10% -10%, #dfeee9 0, transparent 60%),radial-gradient(1200px 800px at 110% 10%, #eaf5f1 0, transparent 60%),var(--bg);
+    }
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+
+    /* Header (mantido) */
+    header{background:linear-gradient(180deg,var(--forest2),var(--forest));color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 6px 22px rgba(0,0,0,.25)}
+    .topbar{display:flex;align-items:center;gap:16px;min-height:96px}
+    .brand img{height:var(--logo-h);width:auto;display:block}
+    nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin-left:auto}
+    nav a, nav button{color:#fff;text-decoration:none;padding:8px 0;background:none;border:0;cursor:pointer;font:inherit}
+    nav a:hover, nav button:hover{text-decoration:underline}
+    nav a[aria-current="page"]{text-decoration:underline;font-weight:700}
+
+    /* Head */
+    .page-head{text-align:center;padding:34px 0 10px}
+    .eyebrow{color:#F1D06F;font-weight:800;letter-spacing:.14em;font-size:12px;text-transform:uppercase}
+    h1{margin:.35rem 0 6px;font-size:36px;color:var(--forest);line-height:1.2}
+    .muted{color:var(--muted);font-size:16px}
+
+    /* Cards & grid */
+    .card{background:var(--card);border-radius:18px;box-shadow:0 25px 60px var(--ring);padding:28px;margin-top:18px}
+    .pair{display:grid;grid-template-columns:1fr;gap:26px;align-items:center}
+    .pair.reverse{grid-auto-flow:dense}
+    @media(min-width:900px){.pair{grid-template-columns:1.05fr 1fr}.pair.reverse .img{order:2}.pair.reverse .text{order:1}}
+
+    /* Photos with watermark */
+    .img figure{margin:0;position:relative;border-radius:16px;overflow:hidden;border:5px solid var(--forest);box-shadow:0 15px 35px rgba(0,0,0,.15)}
+    .img img{display:block;width:100%;height:auto}
+    .wm::after{
+      content:var(--wm, "© Nice Tours and Events");
+      position:absolute;left:10px;bottom:10px;padding:6px 10px;border-radius:10px;
+      background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.35));
+      color:#fff;font-size:14px;font-weight:600;letter-spacing:.02em
+    }
+
+    .lead{font-size:18px;line-height:1.7}
+    .lead p{margin:0 0 14px}
+
+    .btn{display:inline-block;text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:800;box-shadow:0 8px 20px rgba(0,0,0,.15)}
+    .btn-outline{border:2px solid var(--forest);color:var(--forest);background:#fff}
+
+    /* Packages */
+    .packs{display:grid;grid-template-columns:1fr;gap:16px;margin-top:6px}
+    @media(min-width:900px){.packs{grid-template-columns:repeat(2,1fr)}}
+    .pack{border:1px solid rgba(0,0,0,.08);border-radius:14px;padding:16px;background:#fff;box-shadow:0 6px 16px rgba(0,0,0,.06)}
+    .pack h3{margin:0 0 6px;font-size:18px;color:var(--forest)}
+    .pack p{margin:0;color:#374151;line-height:1.6}
+    .badge{display:inline-block;margin-bottom:6px;padding:3px 8px;border-radius:999px;background:#EAF5F1;color:#0F3C2E;font-size:12px;font-weight:700;letter-spacing:.04em}
+
+    footer{margin:56px 0 0;padding:18px 0;text-align:center;color:#fff;background:var(--forest)}
+  </style>
+</head>
+<body>
+
+  <!-- Header (igual às outras páginas) -->
+  <header>
+    <div class="container topbar">
+      <a class="brand" href="index.html"><img src="logo_transparent.png" alt="Nice Tours and Events logo"></a>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="tours.html">Tours</a>
+        <a href="events.html">Events</a>
+        <a href="mailto:nicetoursandevents@gmail.com">Contact</a>
+        <a href="booking.html">Booking</a>
+        <div class="lang" aria-label="Language switcher" style="margin-left:8px;display:flex;gap:8px;font-weight:600;">
+          <button id="btn-en" aria-current="true" style="color:#fff;background:transparent;border:none;cursor:pointer">EN</button> |
+          <button id="btn-pt" style="color:#fff;background:transparent;border:none;cursor:pointer">PT</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Head -->
+  <div class="container page-head">
+    <div class="eyebrow">MEET YOUR GUIDE</div>
+    <h1 data-i18n="title">About Me</h1>
+    <div class="muted" data-i18n="subtitle">Teacher, Event Planner &amp; Certified Tour Guide</div>
+  </div>
+
+  <main class="container">
+    <!-- Bloco 1: Foto Bruges + texto -->
+    <section class="card pair">
+      <div class="img">
+        <figure class="wm" style="--wm:'© Nice Tours and Events'">
+          <img src="bruges9.png" alt="Eunice in Bruges" loading="lazy" decoding="async">
+        </figure>
+      </div>
+      <div class="text lead">
+        <p data-i18n="p1">
+          Hello! I'm <strong>Eunice Haake</strong>, a German-Brazilian based in Düsseldorf, Germany. My passion for hospitality and cultural exchange has led me to specialize in high-quality tours and extraordinary events.
+        </p>
+        <p data-i18n="p2">
+          With years of experience as an event planner and certified tour guide, I design elegant experiences across Europe that are both memorable and meaningful — whether you're a solo traveler or planning a corporate getaway.
+        </p>
+        <a class="btn btn-outline" href="mailto:nicetoursandevents@gmail.com" data-i18n="cta">Contact</a>
+      </div>
+    </section>
+
+    <!-- Bloco 2: Foto retrato + texto -->
+    <section class="card pair reverse">
+      <div class="img">
+        <figure class="wm" style="--wm:'© Nice Tours and Events'">
+          <img src="images/20250510_155458.jpg" alt="Eunice Haake, Certified Tour Guide" loading="lazy" decoding="async">
+        </figure>
+      </div>
+      <div class="text lead">
+        <p data-i18n="p3">
+          I believe travel should be stress-free and beautifully paced. From storybook towns to dramatic landscapes, I curate routes, tastings, photo stops and hands-on experiences that fit your style.
+        </p>
+        <p data-i18n="p4">
+          Below are my five service packages — from a simple, well-crafted itinerary to full VIP assistance with bookings, transfers and on-trip support.
+        </p>
+      </div>
+    </section>
+
+    <!-- Pacotes -->
+    <section class="card">
+      <h2 style="margin:0 0 10px;color:var(--forest)" data-i18n="packs.t">Service Packages</h2>
+      <div class="packs">
+        <article class="pack">
+          <span class="badge" data-i18n="packs.b1">Basic</span>
+          <h3 data-i18n="packs.h1">Essential Itinerary</h3>
+          <p data-i18n="packs.d1">
+            You receive a thoughtful suggested route with hotel and activity suggestions — you handle the bookings at your pace.
+          </p>
+        </article>
+
+        <article class="pack">
+          <span class="badge" data-i18n="packs.b2">Comfort</span>
+          <h3 data-i18n="packs.h2">Itinerary + Lodging</h3>
+          <p data-i18n="packs.d2">
+            Suggested route plus <strong>lodging booked</strong> (single base or multi-stop). Practical and time-saving.
+          </p>
+        </article>
+
+        <article class="pack">
+          <span class="badge" data-i18n="packs.b3">Exclusive</span>
+          <h3 data-i18n="packs.h3">Exclusive</h3>
+          <p data-i18n="packs.d3">
+            Suggested route with <strong>lodging booked</strong> and <strong>WhatsApp assistance during the trip</strong>.
+          </p>
+        </article>
+
+        <article class="pack">
+          <span class="badge" data-i18n="packs.b4">Premium</span>
+          <h3 data-i18n="packs.h4">Premium</h3>
+          <p data-i18n="packs.d4">
+            Everything above plus <strong>tours/entries pre-booked</strong> and a streamlined schedule — maximum convenience.
+          </p>
+        </article>
+
+        <article class="pack" style="grid-column:1/-1">
+          <span class="badge" data-i18n="packs.b5">VIP</span>
+          <h3 data-i18n="packs.h5">VIP</h3>
+          <p data-i18n="packs.d5">
+            Hotel, tours and/or transfers booked; availability for adjustments via email; <strong>WhatsApp travel assistance</strong> throughout; and <strong>guide services</strong> when requested.
+          </p>
+        </article>
+      </div>
+      <div style="margin-top:14px">
+        <a class="btn btn-outline" href="mailto:nicetoursandevents@gmail.com" data-i18n="cta">Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Nice Tours and Events. All rights reserved.</footer>
+
+  <script>
+    /* ========= I18N ========= */
+    const I18N = {
+      'en':{
+        'title':'About Me',
+        'subtitle':'Teacher, Event Planner & Certified Tour Guide',
+        'p1':"Hello! I'm <strong>Eunice Haake</strong>, a German-Brazilian based in Düsseldorf, Germany. My passion for hospitality and cultural exchange has led me to specialize in high-quality tours and extraordinary events.",
+        'p2':"With years of experience as an event planner and certified tour guide, I design elegant experiences across Europe that are both memorable and meaningful — whether you're a solo traveler or planning a corporate getaway.",
+        'p3':"I believe travel should be stress-free and beautifully paced. From storybook towns to dramatic landscapes, I curate routes, tastings, photo stops and hands-on experiences that fit your style.",
+        'p4':"Below are my five service packages — from a simple, well-crafted itinerary to full VIP assistance with bookings, transfers and on-trip support.",
+        'packs.t':'Service Packages',
+        'packs.b1':'Basic','packs.h1':'Essential Itinerary','packs.d1':'You receive a thoughtful suggested route with hotel and activity suggestions — you handle the bookings at your pace.',
+        'packs.b2':'Comfort','packs.h2':'Itinerary + Lodging','packs.d2':'Suggested route plus <strong>lodging booked</strong> (single base or multi-stop). Practical and time-saving.',
+        'packs.b3':'Exclusive','packs.h3':'Exclusive','packs.d3':'Suggested route with <strong>lodging booked</strong> and <strong>WhatsApp assistance during the trip</strong>.',
+        'packs.b4':'Premium','packs.h4':'Premium','packs.d4':'Everything above plus <strong>tours/entries pre-booked</strong> and a streamlined schedule — maximum convenience.',
+        'packs.b5':'VIP','packs.h5':'VIP','packs.d5':'Hotel, tours and/or transfers booked; availability for adjustments via email; <strong>WhatsApp travel assistance</strong> throughout; and <strong>guide services</strong> when requested.',
+        'cta':'Contact'
+      },
+      'pt-BR':{
+        'title':'Sobre Mim',
+        'subtitle':'Professora, Organizadora de Eventos & Guia de Turismo Certificada',
+        'p1':'Olá! Sou a <strong>Eunice Haake</strong>, alemã-brasileira baseada em Düsseldorf. Minha paixão por hospitalidade e troca cultural me levou a especializar-me em passeios de alta qualidade e eventos extraordinários.',
+        'p2':'Com anos de experiência em organização de eventos e como guia certificada, desenho experiências elegantes pela Europa — memoráveis e cheias de significado, para viajantes solo ou grupos corporativos.',
+        'p3':'Acredito que viajar deve ser leve e no seu ritmo. De cidades de conto de fadas a paisagens dramáticas, eu curo roteiros, degustações, paradas fotográficas e experiências práticas que combinam com o seu estilo.',
+        'p4':'Abaixo estão meus cinco pacotes — do roteiro básico ao VIP, com reservas, transfers e assistência durante a viagem.',
+        'packs.t':'Pacotes de Serviço',
+        'packs.b1':'Básico','packs.h1':'Roteiro Essencial','packs.d1':'Você recebe um roteiro sugerido com <strong>hotéis e passeios recomendados</strong> — as reservas ficam por sua conta, no seu tempo.',
+        'packs.b2':'Conforto','packs.h2':'Roteiro + Hospedagem','packs.d2':'Roteiro sugerido com <strong>hospedagem reservada</strong> (uma base ou circuito). Prático e economiza tempo.',
+        'packs.b3':'Exclusivo','packs.h3':'Exclusivo','packs.d3':'Roteiro sugerido com <strong>hospedagem</strong> e <strong>assistência por WhatsApp durante a viagem</strong>.',
+        'packs.b4':'Premium','packs.h4':'Premium','packs.d4':'Tudo acima e, além disso, <strong>passeios/ingressos já marcados</strong> para um roteiro mais prático.',
+        'packs.b5':'VIP','packs.h5':'VIP','packs.d5':'Reserva de hotel e passeios e/ou transfer; disponibilidade para ajustes por e-mail; <strong>assessoria via WhatsApp</strong> durante todo o percurso; e <strong>guia</strong> quando solicitado.',
+        'cta':'Contato'
+      }
+    };
+
+    function applyLang(lang){
+      const d = I18N[lang]||I18N['en'];
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const k=el.getAttribute('data-i18n');
+        if(d[k]!==undefined) el.innerHTML=d[k];
+      });
+      document.documentElement.lang=lang;
+      try{localStorage.setItem('lang',lang)}catch(e){}
+    }
+    document.getElementById('btn-en').addEventListener('click',()=>applyLang('en'));
+    document.getElementById('btn-pt').addEventListener('click',()=>applyLang('pt-BR'));
+    const saved=(()=>{try{return localStorage.getItem('lang')}catch(e){return null}})();
+    const browser=(navigator.language||'en').toLowerCase().startsWith('pt')?'pt-BR':'en';
+    applyLang(saved||browser);
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

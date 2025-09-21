@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="robots" content="index,follow">
+  <title>Fairytale Route – Nice Tours and Events</title>
+
+  <!-- SEO base -->
+  <link rel="canonical" href="./fairytale-route.html">
+  <meta name="description" content="Follow Germany’s Fairytale Route (Deutsche Märchenstraße): Brothers Grimm towns, forests, castles and storybook villages. Pair with the Half-Timbered Route.">
+  <meta name="author" content="Nice Tours and Events">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Fairytale Route – Nice Tours and Events">
+  <meta property="og:description" content="Brothers Grimm towns, forests, castles and storybook villages along Germany’s Fairytale Route. Tailor-made itineraries; great with the Half-Timbered Route.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./fairytale-route.html">
+  <meta property="og:image" content="bremen-fairytale.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fairytale Route – Nice Tours and Events">
+  <meta name="twitter:description" content="Storybook towns and forests on Germany’s Fairytale Route. Pair with the Half-Timbered Route.">
+  <meta name="twitter:image" content="bremen-fairytale.jpg">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TouristTrip",
+    "name":"Fairytale Route (Deutsche Märchenstraße)",
+    "description":"Tailor-made trip following Germany’s Fairytale Route: Brothers Grimm towns, forests, castles and storybook villages. Can be combined with the Half-Timbered Route and Castles & Gardens.",
+    "touristType":"Private tailor-made",
+    "areaServed":["Germany","Europe"],
+    "image":"bremen-fairytale.jpg",
+    "organizer":{"@type":"Organization","name":"Nice Tours and Events"},
+    "offers":{"@type":"Offer","url":"https://www.nicetoursandevents.com/booking.html","availability":"https://schema.org/InStock","priceCurrency":"EUR","price":"0","priceSpecification":{"@type":"PriceSpecification","price":"0","priceCurrency":"EUR","description":"On request"}}
+  }
+  </script>
+
+  <!-- Styles -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --forest:#0F3C2E }
+    body{ font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial }
+    h1,h2,h3{ font-family:"Playfair Display", ui-serif, Georgia, serif }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 min-h-screen">
+  <!-- Header -->
+  <header class="bg-[color:var(--forest)] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap gap-3 items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo_transparent.png" alt="Nice Tours and Events logo" class="h-24 w-auto" width="240" height="96">
+        <span class="sr-only">Nice Tours and Events</span>
+      </a>
+
+      <nav class="flex flex-wrap items-center gap-4" aria-label="Primary">
+        <a href="index.html" class="hover:underline" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="hover:underline" data-i18n="nav.about">About</a>
+        <a href="tours.html" class="hover:underline font-semibold" data-i18n="nav.tours">Tours</a>
+        <a href="events.html" class="hover:underline" data-i18n="nav.events">Events</a>
+        <a href="mailto:nicetoursandevents@gmail.com" class="hover:underline" data-i18n="nav.contact">Contact</a>
+        <a href="booking.html" class="hover:underline" data-i18n="nav.booking">Booking</a>
+        <span class="opacity-70">|</span>
+        <button id="btn-en" class="hover:underline">EN</button>
+        <button id="btn-pt" class="hover:underline">PT</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Head -->
+  <div class="max-w-6xl mx-auto px-4 pt-10 text-center">
+    <div class="text-[color:var(--forest)] font-extrabold tracking-widest uppercase text-xs mb-2" data-i18n="eyebrow">Fairytale Route</div>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-[color:var(--forest)]" data-i18n="h1">Fairytale Route in Germany</h1>
+    <p class="text-gray-600 mt-2" data-i18n="subtitle">Brothers Grimm towns, castles, forests & storybook villages</p>
+  </div>
+
+  <!-- Hero (vertical) -->
+  <section class="max-w-5xl mx-auto px-4 pt-6">
+    <figure class="max-w-[640px] mx-auto">
+      <img
+        src="bremen-fairytale.jpg"
+        alt="Bremen Town Musicians statue at night on the Fairytale Route"
+        class="block w-full h-auto rounded-2xl border-4 border-[color:var(--forest)] shadow-xl"
+        style="max-height:80vh"
+        loading="lazy" decoding="async">
+      <figcaption class="text-center text-sm text-emerald-900/80 mt-2">
+        <span data-i18n="caption.hero">Bremen Town Musicians — a Fairytale Route icon</span>
+      </figcaption>
+    </figure>
+
+    <!-- chips/selos -->
+    <div class="mt-4 flex flex-wrap justify-center gap-2">
+      <span class="inline-flex items-center px-3 py-1 rounded-full border border-emerald-200 bg-emerald-50 text-emerald-900/90 text-xs font-semibold" data-i18n="chip.grimm">Grimm heritage</span>
+      <span class="inline-flex items-center px-3 py-1 rounded-full border border-emerald-200 bg-emerald-50 text-emerald-900/90 text-xs font-semibold" data-i18n="chip.towns">Half-timbered towns</span>
+      <span class="inline-flex items-center px-3 py-1 rounded-full border border-emerald-200 bg-emerald-50 text-emerald-900/90 text-xs font-semibold" data-i18n="chip.forests">Forest paths</span>
+      <span class="inline-flex items-center px-3 py-1 rounded-full border border-emerald-200 bg-emerald-50 text-emerald-900/90 text-xs font-semibold" data-i18n="chip.castles">Castles &amp; towers</span>
+    </div>
+  </section>
+
+  <!-- Vídeo responsivo (com nocookie + troca por idioma) -->
+  <section class="max-w-5xl mx-auto px-4 pt-6">
+    <iframe
+      id="video"
+      class="block w-full max-w-3xl mx-auto rounded-2xl overflow-hidden border-4 border-[color:var(--forest)] shadow-xl"
+      style="aspect-ratio:16/9"
+      src="https://www.youtube-nocookie.com/embed/LC_iWUgMxiY"
+      title="Fairytale Route in Germany"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"
+      playsinline></iframe>
+  </section>
+
+  <!-- Intro + details -->
+  <section class="max-w-5xl mx-auto px-4 pt-6">
+    <div class="bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,.10)] border border-black/5 p-6 sm:p-8 grid md:grid-cols-2 gap-6 md:gap-10 items-start">
+      <div class="order-2 md:order-1 text-lg leading-relaxed text-gray-700">
+        <h2 class="text-2xl font-extrabold text-[color:var(--forest)] mb-3" data-i18n="h2">A storybook road brought to life</h2>
+
+        <p class="mb-4" data-i18n="p1">
+          Germany’s Fairytale Route (<em>Deutsche Märchenstraße</em>) links places connected to the Brothers Grimm and beloved legends. Wander half-timbered towns, castles and forest paths that feel straight out of a tale.
+        </p>
+
+        <h3 class="text-xl font-extrabold text-[color:var(--forest)] mt-4" data-i18n="how.t">Two elegant ways to explore</h3>
+        <p class="mb-3" data-i18n="how.d">
+          1) Base-and-daytrips around a central stretch of the route; 2) Or connect highlight towns over 3–5 days. We keep it relaxed with scenic walks, cafés and viewpoints.
+        </p>
+
+        <h3 class="text-xl font-extrabold text-[color:var(--forest)] mt-2" data-i18n="combo.t">Perfect combinations</h3>
+        <p data-i18n="combo.d">
+          Pair the Fairytale Route with the charming
+          <a href="half-timbered-tours.html" class="underline font-semibold">Half-Timbered Route</a>
+          for classic façades and romantic squares. It also works beautifully with
+          <a href="castles-and-gardens.html" class="underline font-semibold">Castles &amp; Gardens</a>.
+        </p>
+      </div>
+
+      <div class="order-1 md:order-2">
+        <ul class="space-y-3 text-gray-700">
+          <li class="grid grid-cols-[auto,1fr] gap-x-3">
+            <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.theme.t">Theme:</span>
+            <span data-i18n="facts.theme.d">Grimm heritage, forest paths, castles and half-timbered towns.</span>
+          </li>
+          <li class="grid grid-cols-[auto,1fr] gap-x-3">
+            <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.season.t">Best season:</span>
+            <span data-i18n="facts.season.d">Spring–autumn for greenery; winter brings a quieter, misty mood.</span>
+          </li>
+          <li class="grid grid-cols-[auto,1fr] gap-x-3">
+            <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.style.t">Style:</span>
+            <span data-i18n="facts.style.d">Gentle pace • curated photo stops • cafés & viewpoints.</span>
+          </li>
+          <li class="grid grid-cols-[auto,1fr] gap-x-3">
+            <span class="font-semibold text-[color:var(--forest)]" data-i18n="facts.custom.t">Custom:</span>
+            <span data-i18n="facts.custom.d">Private, tailor-made itineraries to match your time and interests.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-5xl mx-auto px-4 py-8">
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="booking.html" class="inline-block bg-[color:var(--forest)] text-white px-5 py-2 rounded-lg font-bold shadow hover:brightness-95" data-i18n="cta.book">
+        Book your tour
+      </a>
+      <a href="tours.html" class="inline-block border-2 border-[color:var(--forest)] text-[color:var(--forest)] px-5 py-2 rounded-lg font-bold hover:bg-emerald-50" data-i18n="cta.all">
+        See all tours
+      </a>
+    </div>
+  </section>
+
+  <!-- Related -->
+  <section class="max-w-5xl mx-auto px-4 pb-12 grid sm:grid-cols-2 gap-4">
+    <a href="half-timbered-tours.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+      <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.timber.t">Half-Timbered Route</h3>
+      <p class="text-gray-600" data-i18n="card.timber.d">Fairytale-like towns with timbered façades, cobbled lanes and market squares.</p>
+    </a>
+    <a href="castles-and-gardens.html" class="block rounded-xl border border-black/10 p-4 hover:shadow-lg transition">
+      <h3 class="font-extrabold text-[color:var(--forest)]" data-i18n="card.castles.t">Castles &amp; Gardens</h3>
+      <p class="text-gray-600" data-i18n="card.castles.d">Palaces, landscaped gardens and scenic viewpoints.</p>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[color:var(--forest)] text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      &copy; 2025 Nice Tours and Events. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- I18N + troca de vídeo por idioma -->
+  <script>
+    const I18N = {
+      'en': {
+        'meta.title':'Fairytale Route – Nice Tours and Events',
+        'meta.description':'Follow Germany’s Fairytale Route (Deutsche Märchenstraße): Brothers Grimm towns, forests, castles and storybook villages. Pair with the Half-Timbered Route.',
+        'og.title':'Fairytale Route – Nice Tours and Events',
+        'og.description':'Brothers Grimm towns, forests, castles and storybook villages along Germany’s Fairytale Route. Tailor-made itineraries; great with the Half-Timbered Route.',
+        'tw.title':'Fairytale Route – Nice Tours and Events',
+        'tw.description':'Storybook towns and forests on Germany’s Fairytale Route. Pair with the Half-Timbered Route.',
+        'nav.home':'Home','nav.about':'About','nav.tours':'Tours','nav.events':'Events','nav.contact':'Contact','nav.booking':'Booking',
+        'eyebrow':'Fairytale Route','h1':'Fairytale Route in Germany',
+        'subtitle':'Brothers Grimm towns, castles, forests & storybook villages',
+        'h2':'A storybook road brought to life',
+        'p1':'Germany’s Fairytale Route (<em>Deutsche Märchenstraße</em>) links places connected to the Brothers Grimm and beloved legends. Wander half-timbered towns, castles and forest paths that feel straight out of a tale.',
+        'how.t':'Two elegant ways to explore',
+        'how.d':'1) Base-and-daytrips around a central stretch of the route; 2) Or connect highlight towns over 3–5 days. We keep it relaxed with scenic walks, cafés and viewpoints.',
+        'combo.t':'Perfect combinations',
+        'combo.d':'Pair the Fairytale Route with the charming <a href="half-timbered-tours.html" class="underline font-semibold">Half-Timbered Route</a> for classic façades and romantic squares. It also works beautifully with <a href="castles-and-gardens.html" class="underline font-semibold">Castles &amp; Gardens</a>.',
+        'facts.theme.t':'Theme:','facts.theme.d':'Grimm heritage, forest paths, castles and half-timbered towns.',
+        'facts.season.t':'Best season:','facts.season.d':'Spring–autumn for greenery; winter brings a quieter, misty mood.',
+        'facts.style.t':'Style:','facts.style.d':'Gentle pace • curated photo stops • cafés & viewpoints.',
+        'facts.custom.t':'Custom:','facts.custom.d':'Private, tailor-made itineraries to match your time and interests.',
+        'cta.book':'Book your tour','cta.all':'See all tours',
+        'caption.hero':'Bremen Town Musicians — a Fairytale Route icon',
+        'chip.grimm':'Grimm heritage','chip.towns':'Half-timbered towns','chip.forests':'Forest paths','chip.castles':'Castles & towers',
+        'card.timber.t':'Half-Timbered Route','card.timber.d':'Fairytale-like towns with timbered façades, cobbled lanes and market squares.',
+        'card.castles.t':'Castles & Gardens','card.castles.d':'Palaces, landscaped gardens and scenic viewpoints.'
+      },
+      'pt-BR': {
+        'meta.title':'Rota dos Contos de Fada – Nice Tours and Events',
+        'meta.description':'Siga a Deutsche Märchenstraße: cidades dos Irmãos Grimm, florestas, castelos e vilas de conto. Combine com a Rota do Enxaimel.',
+        'og.title':'Rota dos Contos de Fada – Nice Tours and Events',
+        'og.description':'Cidades dos Irmãos Grimm, florestas, castelos e vilas de conto na Rota dos Contos de Fada. Roteiros sob medida; ótima com a Rota do Enxaimel.',
+        'tw.title':'Rota dos Contos de Fada – Nice Tours and Events',
+        'tw.description':'Vilas de conto e trilhas na floresta pela Deutsche Märchenstraße. Combine com a Rota do Enxaimel.',
+        'nav.home':'Início','nav.about':'Sobre','nav.tours':'Passeios','nav.events':'Eventos','nav.contact':'Contato','nav.booking':'Reservas',
+        'eyebrow':'Rota dos Contos de Fada','h1':'Rota dos Contos de Fada na Alemanha',
+        'subtitle':'Cidades dos Irmãos Grimm, castelos, florestas e vilas de conto',
+        'h2':'Uma estrada de histórias ganhando vida',
+        'p1':'A Rota dos Contos de Fada (<em>Deutsche Märchenstraße</em>) conecta lugares ligados aos Irmãos Grimm e a lendas queridas. Caminhe por cidades enxaimel, castelos e trilhas de floresta que parecem saídas de um livro.',
+        'how.t':'Duas formas elegantes de explorar',
+        'how.d':'1) Bate-voltas a partir de um trecho central da rota; 2) Ou conecte cidades-destaque em 3–5 dias. Ritmo tranquilo, com caminhadas leves, cafés e mirantes.',
+        'combo.t':'Combinações perfeitas',
+        'combo.d':'Combine a Rota dos Contos de Fada com a charmosa <a href="half-timbered-tours.html" class="underline font-semibold">Rota do Enxaimel</a>, com fachadas clássicas e praças românticas. Também funciona muito bem com <a href="castles-and-gardens.html" class="underline font-semibold">Castelos & Jardins</a>.',
+        'facts.theme.t':'Tema:','facts.theme.d':'Herança Grimm, trilhas na floresta, castelos e cidades enxaimel.',
+        'facts.season.t':'Melhor época:','facts.season.d':'da primavera ao outono; no inverno a paisagem fica silenciosa e brumosa.',
+        'facts.style.t':'Estilo:','facts.style.d':'Ritmo tranquilo • paradas fotográficas selecionadas • cafés e mirantes.',
+        'facts.custom.t':'Sob medida:','facts.custom.d':'Roteiros privados e personalizados conforme seu tempo e interesses.',
+        'cta.book':'Reserve seu tour','cta.all':'Todos os tours',
+        'caption.hero':'Os Músicos de Bremen — ícone da Rota dos Contos de Fada',
+        'chip.grimm':'Herança Grimm','chip.towns':'Cidades enxaimel','chip.forests':'Trilhas na floresta','chip.castles':'Castelos e torres',
+        'card.timber.t':'Rota do Enxaimel','card.timber.d':'Cidades de conto com fachadas em enxaimel, ruas de pedra e praças históricas.',
+        'card.castles.t':'Castelos & Jardins','card.castles.d':'Palácios, jardins planejados e mirantes cênicos.'
+      }
+    };
+
+    function setMeta(sel,val){const el=document.querySelector(sel); if(el&&val) el.setAttribute('content',val)}
+
+    // Troca segura do vídeo por idioma
+    function setVideoForLang(lang){
+      const iframe = document.getElementById('video');
+      if(!iframe) return;
+      const en = 'https://www.youtube-nocookie.com/embed/LC_iWUgMxiY';
+      const pt = 'https://www.youtube-nocookie.com/embed/Yj8pGYrhzXs?start=4';
+      const target = (lang === 'pt-BR') ? pt : en;
+      if (iframe.src !== target) iframe.src = target;
+    }
+
+    function applyLang(lang){
+      const d=I18N[lang]||I18N['en'];
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const k=el.getAttribute('data-i18n');
+        if(d[k]!==undefined){
+          if(k==='combo.d' || k==='p1') el.innerHTML=d[k];
+          else el.textContent=d[k];
+        }
+      });
+      document.title=d['meta.title']||document.title;
+      setMeta('meta[name="description"]',d['meta.description']);
+      setMeta('meta[property="og:title"]',d['og.title']);
+      setMeta('meta[property="og:description"]',d['og.description']);
+      setMeta('meta[name="twitter:title"]',d['tw.title']);
+      setMeta('meta[name="twitter:description"]',d['tw.description']);
+      document.documentElement.lang=lang;
+      try{localStorage.setItem('lang',lang)}catch(e){}
+      // atualiza o vídeo conforme o idioma
+      setVideoForLang(lang);
+    }
+
+    document.getElementById('btn-en').addEventListener('click',()=>applyLang('en'));
+    document.getElementById('btn-pt').addEventListener('click',()=>applyLang('pt-BR'));
+
+    // Inicializa idioma + vídeo
+    (function initLang(){
+      const saved = (()=>{try{return localStorage.getItem('lang')}catch(e){return null}})();
+      const initial = saved || ((navigator.language||'en').toLowerCase().startsWith('pt') ? 'pt-BR' : 'en');
+      applyLang(initial);
+    })();
+  </script>
+</body>
+</html>
+
+
+
+
